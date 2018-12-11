@@ -21,7 +21,6 @@
     [self loadDesc];
 }
     
-
 - (void)loadDesc{
     AudioComponentDescription ioUnitDescription;
     ioUnitDescription.componentType = kAudioUnitType_Output;
@@ -86,7 +85,6 @@ static void CheckStatus(OSStatus status, NSString *message, BOOL flag){
         }
     }
 }
-
 
 //
 //kAudioUnitType_Output                    = 'auou',
