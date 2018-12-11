@@ -16,6 +16,7 @@
 		A6639CF321BF5A6D006F5CE8 /* JFAudioUnitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A6639CF221BF5A6D006F5CE8 /* JFAudioUnitTests.m */; };
 		A6639CFE21BF5A6D006F5CE8 /* JFAudioUnitUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A6639CFD21BF5A6D006F5CE8 /* JFAudioUnitUITests.m */; };
 		A6639D0D21BF5AF4006F5CE8 /* JFAudioViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6639D0C21BF5AF4006F5CE8 /* JFAudioViewController.m */; };
+		A6639D1021BFA290006F5CE8 /* JFAudioUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = A6639D0F21BFA290006F5CE8 /* JFAudioUtil.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,8 @@
 		A6639CFF21BF5A6D006F5CE8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A6639D0B21BF5AF3006F5CE8 /* JFAudioViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFAudioViewController.h; sourceTree = "<group>"; };
 		A6639D0C21BF5AF4006F5CE8 /* JFAudioViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFAudioViewController.m; sourceTree = "<group>"; };
+		A6639D0E21BFA290006F5CE8 /* JFAudioUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JFAudioUtil.h; sourceTree = "<group>"; };
+		A6639D0F21BFA290006F5CE8 /* JFAudioUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JFAudioUtil.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +118,8 @@
 				A6639CE421BF5A6D006F5CE8 /* LaunchScreen.storyboard */,
 				A6639CE721BF5A6D006F5CE8 /* Info.plist */,
 				A6639CE821BF5A6D006F5CE8 /* main.m */,
+				A6639D0E21BFA290006F5CE8 /* JFAudioUtil.h */,
+				A6639D0F21BFA290006F5CE8 /* JFAudioUtil.m */,
 			);
 			path = JFAudioUnit;
 			sourceTree = "<group>";
@@ -271,6 +276,7 @@
 				A6639CE921BF5A6D006F5CE8 /* main.m in Sources */,
 				A6639CDB21BF5A6C006F5CE8 /* AppDelegate.m in Sources */,
 				A6639D0D21BF5AF4006F5CE8 /* JFAudioViewController.m in Sources */,
+				A6639D1021BFA290006F5CE8 /* JFAudioUtil.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
