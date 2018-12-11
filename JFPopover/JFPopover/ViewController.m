@@ -38,13 +38,16 @@
     
     JFPopOverViewController *popOverVC = [[JFPopOverViewController alloc] init];
     popOverVC.view.backgroundColor = [UIColor lightGrayColor];
+    //  要展示的内容区域大小，建议和本对象的展示区域一致
     popOverVC.preferredContentSize = CGSizeMake(100, 200);
     popOverVC.modalPresentationStyle = UIModalPresentationPopover;
     
     UIPopoverPresentationController *popController = popOverVC.popoverPresentationController;
+    // 箭头指向
     popController.permittedArrowDirections = UIPopoverArrowDirectionUp;
     popController.delegate = self;
     popController.sourceRect = CGRectMake(0, -30, 100, 100);
+    // 指向的目标视图
     popController.sourceView = self.btn;
     popController.backgroundColor = [UIColor lightGrayColor];
     
