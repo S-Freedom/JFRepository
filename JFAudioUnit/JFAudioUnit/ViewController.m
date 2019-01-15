@@ -93,14 +93,14 @@
         case 1:{
             __weak typeof(self) wSelf = self;
             [self requestMicAuthorizationWithBlock:^(BOOL granted) {
-                if(granted){
-                    if([wSelf.record prepareToRecord]){
-                        [wSelf.record record];
-                        self.desLabel.text = @"录制中...";
-                    }
-                }else{
-                    [self goSetting];
-                }
+                
+                if(!granted)  [self goSetting];
+                if(![wSelf.record prepareToRecord]) return;
+                
+                [wSelf.record record];
+                dispatch_async(dispatch_get_main_queue(), ^{
+                    wSelf.desLabel.text = @"录制中...";
+                });
             }];
         }
             break;

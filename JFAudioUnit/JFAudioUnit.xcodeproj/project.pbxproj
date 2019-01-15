@@ -17,6 +17,7 @@
 		A6639CFE21BF5A6D006F5CE8 /* JFAudioUnitUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A6639CFD21BF5A6D006F5CE8 /* JFAudioUnitUITests.m */; };
 		A6639D0D21BF5AF4006F5CE8 /* JFAudioViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6639D0C21BF5AF4006F5CE8 /* JFAudioViewController.m */; };
 		A6639D1021BFA290006F5CE8 /* JFAudioUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = A6639D0F21BFA290006F5CE8 /* JFAudioUtil.m */; };
+		CC4A10406854EFE9B7B7FD2B /* Pods_JFAudioUnit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FA97122CC843AED59F1BBE1 /* Pods_JFAudioUnit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +38,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5FA97122CC843AED59F1BBE1 /* Pods_JFAudioUnit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JFAudioUnit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F7AEFB31D3F002FDA5ED8B0 /* Pods-JFAudioUnit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JFAudioUnit.release.xcconfig"; path = "Pods/Target Support Files/Pods-JFAudioUnit/Pods-JFAudioUnit.release.xcconfig"; sourceTree = "<group>"; };
+		9D47F80C852D0083C2B7C42C /* Pods-JFAudioUnit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JFAudioUnit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JFAudioUnit/Pods-JFAudioUnit.debug.xcconfig"; sourceTree = "<group>"; };
 		A6639CD621BF5A6C006F5CE8 /* JFAudioUnit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JFAudioUnit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6639CD921BF5A6C006F5CE8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A6639CDA21BF5A6C006F5CE8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -64,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC4A10406854EFE9B7B7FD2B /* Pods_JFAudioUnit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,6 +89,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1E4CDCFFA7D2C0F2CF23DECD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5FA97122CC843AED59F1BBE1 /* Pods_JFAudioUnit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A6639CCD21BF5A6C006F5CE8 = {
 			isa = PBXGroup;
 			children = (
@@ -91,6 +104,8 @@
 				A6639CF121BF5A6D006F5CE8 /* JFAudioUnitTests */,
 				A6639CFC21BF5A6D006F5CE8 /* JFAudioUnitUITests */,
 				A6639CD721BF5A6C006F5CE8 /* Products */,
+				F1D32FAA5C236DEF2ACAF366 /* Pods */,
+				1E4CDCFFA7D2C0F2CF23DECD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -142,6 +157,15 @@
 			path = JFAudioUnitUITests;
 			sourceTree = "<group>";
 		};
+		F1D32FAA5C236DEF2ACAF366 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9D47F80C852D0083C2B7C42C /* Pods-JFAudioUnit.debug.xcconfig */,
+				6F7AEFB31D3F002FDA5ED8B0 /* Pods-JFAudioUnit.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -149,9 +173,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A6639D0221BF5A6D006F5CE8 /* Build configuration list for PBXNativeTarget "JFAudioUnit" */;
 			buildPhases = (
+				305F1367FB73C29438502C22 /* [CP] Check Pods Manifest.lock */,
 				A6639CD221BF5A6C006F5CE8 /* Sources */,
 				A6639CD321BF5A6C006F5CE8 /* Frameworks */,
 				A6639CD421BF5A6C006F5CE8 /* Resources */,
+				95A0C9812D2AE477A67D34BA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -266,6 +292,53 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		305F1367FB73C29438502C22 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JFAudioUnit-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		95A0C9812D2AE477A67D34BA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-JFAudioUnit/Pods-JFAudioUnit-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GPUImage/GPUImage.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GPUImage.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JFAudioUnit/Pods-JFAudioUnit-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A6639CD221BF5A6C006F5CE8 /* Sources */ = {
@@ -445,6 +518,7 @@
 		};
 		A6639D0321BF5A6D006F5CE8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D47F80C852D0083C2B7C42C /* Pods-JFAudioUnit.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -463,6 +537,7 @@
 		};
 		A6639D0421BF5A6D006F5CE8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6F7AEFB31D3F002FDA5ED8B0 /* Pods-JFAudioUnit.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
