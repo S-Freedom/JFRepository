@@ -132,8 +132,8 @@ typedef enum : NSUInteger {
 
         NSDictionary *dic = responseObject;
         NSLog(@"dic %@",dic);
-        NSString *dst = [dic[@"dst"] stringByRemovingPercentEncoding];
-        NSString *src = [dic[@"src"] stringByRemovingPercentEncoding];
+        NSString *dst = [[dic[@"dst"] stringByRemovingPercentEncoding] stringByReplacingOccurrencesOfString:@"\"" withString:@""];
+        NSString *src = [[dic[@"src"] stringByRemovingPercentEncoding] stringByReplacingOccurrencesOfString:@"\"" withString:@""];
         NSLog(@"dst: %@", dst);
         NSLog(@"src: %@", src);
         CGRect rect =  wSelf.resultLabel.frame;
