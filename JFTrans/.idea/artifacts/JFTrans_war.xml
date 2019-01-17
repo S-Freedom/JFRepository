@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="JFTrans:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="com.jf.JFTrans.war">
+      <element id="artifact" artifact-name="JFTrans:war exploded" />
+    </root>
+  </artifact>
+</component>

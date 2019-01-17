@@ -17,6 +17,9 @@
 		A68F8E6B21EC379A00FEA2A9 /* JFTranslateUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A68F8E6A21EC379A00FEA2A9 /* JFTranslateUITests.m */; };
 		A68F8E7D21EDB6A700FEA2A9 /* JRNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = A68F8E7B21EDB6A600FEA2A9 /* JRNetworking.m */; };
 		A68F8E8021EDBBFA00FEA2A9 /* JFUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = A68F8E7F21EDBBFA00FEA2A9 /* JFUtils.m */; };
+		A68F8E8521EE0D0F00FEA2A9 /* Baidu.js in Resources */ = {isa = PBXBuildFile; fileRef = A68F8E8221EE0D0F00FEA2A9 /* Baidu.js */; };
+		A68F8E8621EE0D0F00FEA2A9 /* Google.js in Resources */ = {isa = PBXBuildFile; fileRef = A68F8E8321EE0D0F00FEA2A9 /* Google.js */; };
+		A68F8E8721EE0D0F00FEA2A9 /* Sogou.js in Resources */ = {isa = PBXBuildFile; fileRef = A68F8E8421EE0D0F00FEA2A9 /* Sogou.js */; };
 		CE5FA9DE8542121BADBCC9E7 /* Pods_JFTranslate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B363EBE70E560BED3797AB4 /* Pods_JFTranslate.framework */; };
 /* End PBXBuildFile section */
 
@@ -60,6 +63,9 @@
 		A68F8E7C21EDB6A600FEA2A9 /* JRNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRNetworking.h; sourceTree = "<group>"; };
 		A68F8E7E21EDBBFA00FEA2A9 /* JFUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JFUtils.h; sourceTree = "<group>"; };
 		A68F8E7F21EDBBFA00FEA2A9 /* JFUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JFUtils.m; sourceTree = "<group>"; };
+		A68F8E8221EE0D0F00FEA2A9 /* Baidu.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = Baidu.js; sourceTree = "<group>"; };
+		A68F8E8321EE0D0F00FEA2A9 /* Google.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = Google.js; sourceTree = "<group>"; };
+		A68F8E8421EE0D0F00FEA2A9 /* Sogou.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = Sogou.js; sourceTree = "<group>"; };
 		B1DE4C274D5B136AC8797F01 /* Pods-JFTranslate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JFTranslate.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JFTranslate/Pods-JFTranslate.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -131,6 +137,10 @@
 		A68F8E4521EC379900FEA2A9 /* JFTranslate */ = {
 			isa = PBXGroup;
 			children = (
+				A68F8E8121EE0CD100FEA2A9 /* Source */,
+				A68F8E8221EE0D0F00FEA2A9 /* Baidu.js */,
+				A68F8E8321EE0D0F00FEA2A9 /* Google.js */,
+				A68F8E8421EE0D0F00FEA2A9 /* Sogou.js */,
 				A68F8E4621EC379900FEA2A9 /* AppDelegate.h */,
 				A68F8E4721EC379900FEA2A9 /* AppDelegate.m */,
 				A68F8E4921EC379900FEA2A9 /* ViewController.h */,
@@ -164,6 +174,13 @@
 				A68F8E6C21EC379A00FEA2A9 /* Info.plist */,
 			);
 			path = JFTranslateUITests;
+			sourceTree = "<group>";
+		};
+		A68F8E8121EE0CD100FEA2A9 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Source;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -271,8 +288,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A68F8E8521EE0D0F00FEA2A9 /* Baidu.js in Resources */,
 				A68F8E5321EC379A00FEA2A9 /* LaunchScreen.storyboard in Resources */,
 				A68F8E5021EC379A00FEA2A9 /* Assets.xcassets in Resources */,
+				A68F8E8621EE0D0F00FEA2A9 /* Google.js in Resources */,
+				A68F8E8721EE0D0F00FEA2A9 /* Sogou.js in Resources */,
 				A68F8E4E21EC379900FEA2A9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
