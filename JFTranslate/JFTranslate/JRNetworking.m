@@ -171,9 +171,10 @@
                             completionHandler:(void (^)(NSURLResponse *response, id responseObject,  NSError * error))completionHandler{
     AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
     
+//    [manager.requestSerializer setValue:@"x-www-form-urlencoded" forHTTPHeaderField:@"Content-Type"];
     __block NSMutableString *queryString = [NSMutableString new];
     [params enumerateKeysAndObjectsUsingBlock:^(id  _Nonnull key, id  _Nonnull obj, BOOL * _Nonnull stop) {
-        NSString *value = [JFUtils URLEncodedString:obj];
+        NSString *value = obj;
         [queryString appendFormat:@"%@=%@&", key, value];
     }];
     //删除最后一个“&”
@@ -182,10 +183,16 @@
     }
     NSMutableURLRequest *mRequest = [request mutableCopy];
     mRequest.HTTPMethod = @"POST";
-    mRequest.HTTPBody = [queryString dataUsingEncoding:NSUTF8StringEncoding];
-    [header enumerateKeysAndObjectsUsingBlock:^(id  _Nonnull key, id  _Nonnull obj, BOOL * _Nonnull stop) {
-        [mRequest setValue:obj forHTTPHeaderField:key];
-    }];
+    
+//    NSError *error;
+//    NSData *jsonData = [NSJSONSerialization dataWithJSONObject:params options:NSJSONWritingPrettyPrinted error:&error];
+//    mRequest.HTTPBody = jsonData;
+    mRequest.HTTPBody =  [queryString dataUsingEncoding:NSUTF8StringEncoding];
+    
+    
+//    [header enumerateKeysAndObjectsUsingBlock:^(id  _Nonnull key, id  _Nonnull obj, BOOL * _Nonnull stop) {
+//        [mRequest setValue:obj forHTTPHeaderField:key];
+//    }];
     #pragma clang diagnostic push
     #pragma clang diagnostic ignored "-Wdeprecated-declarations"
     request = [mRequest copy];
