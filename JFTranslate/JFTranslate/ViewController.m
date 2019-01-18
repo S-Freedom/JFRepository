@@ -11,6 +11,7 @@
 #import "JFUtils.h"
 #import <AFNetworking/AFNetworking.h>
 #import <CommonCrypto/CommonDigest.h>
+#import "JFOnlineVoiceRecoTool.h"
 
 typedef enum : NSUInteger {
     JFBaiduTranslateType,
@@ -72,6 +73,15 @@ typedef enum : NSUInteger {
     [fyBtn addTarget:self action:@selector(translateBtnClick:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:fyBtn];
     
+    CGRect voiceFrame = CGRectMake(fyFrame.origin.x, CGRectGetMaxY(fyBtn.frame) + 20, 50, 40);
+    UIButton *voiceBtn = [[UIButton alloc] initWithFrame:voiceFrame];
+    [voiceBtn setTitle:@"语音" forState:UIControlStateNormal];
+    [voiceBtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    [voiceBtn setTitleColor:[UIColor greenColor] forState:UIControlStateSelected];
+    voiceBtn.contentHorizontalAlignment = UIControlContentVerticalAlignmentCenter;
+    [voiceBtn addTarget:self action:@selector(voiceBtnClick:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:voiceBtn];
+    
     CGFloat labelY = CGRectGetMaxY(textView.frame) +20;
     CGFloat resultWidth = textWidth + 50;
     UILabel *resultLabel = [[UILabel alloc] initWithFrame:CGRectMake(20, labelY, resultWidth, self.view.bounds.size.height - labelY - 20)];
@@ -109,6 +119,22 @@ typedef enum : NSUInteger {
         self.type = JFBaiduTranslateType;
     }else if(tag == 1){
         self.type = JFYoudaoTranslateType;
+    }
+}
+
+- (void)voiceBtnClick:(UIButton *)sender{
+    sender.selected = !sender.selected;
+    if(sender.selected){
+        [[JFOnlineVoiceRecoTool shareInstance] startHandler:^(JFTentcentHandler * _Nonnull handler) {
+//            NSLog(@"descMsg %@", handler.descMsg);
+            NSLog(@"text    %@", handler.text);
+//            NSLog(@"voiceId %@", handler.voiceId);
+//            NSLog(@"retCode %d", handler.retCode);
+        } stateChange:^(VoiceState state) {
+            NSLog(@"state : %@", @(state));
+        }];
+    }else{
+        [[JFOnlineVoiceRecoTool shareInstance] stop];
     }
 }
 

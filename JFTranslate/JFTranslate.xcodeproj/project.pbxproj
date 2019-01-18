@@ -21,6 +21,13 @@
 		A68F8E8621EE0D0F00FEA2A9 /* Google.js in Resources */ = {isa = PBXBuildFile; fileRef = A68F8E8321EE0D0F00FEA2A9 /* Google.js */; };
 		A68F8E8721EE0D0F00FEA2A9 /* Sogou.js in Resources */ = {isa = PBXBuildFile; fileRef = A68F8E8421EE0D0F00FEA2A9 /* Sogou.js */; };
 		A6C349BF21F05F3C007950D5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6C349BE21F05F3C007950D5 /* ViewController.m */; };
+		A6C349DB21F1A21F007950D5 /* JFOnlineVoiceRecoTool.m in Sources */ = {isa = PBXBuildFile; fileRef = A6C349DA21F1A21F007950D5 /* JFOnlineVoiceRecoTool.m */; };
+		A6C34A0721F1CA8C007950D5 /* base64.m in Sources */ = {isa = PBXBuildFile; fileRef = A6C34A0521F1CA8C007950D5 /* base64.m */; };
+		A6C34A0821F1CA8C007950D5 /* DemoUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = A6C34A0621F1CA8C007950D5 /* DemoUtil.m */; };
+		A6C34A0B21F1CA98007950D5 /* Congfig.m in Sources */ = {isa = PBXBuildFile; fileRef = A6C34A0A21F1CA98007950D5 /* Congfig.m */; };
+		A6C34A1021F1CAAF007950D5 /* libQCloudAAIClient.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A6C34A0F21F1CAAF007950D5 /* libQCloudAAIClient.a */; };
+		A6C34A1221F1D2A9007950D5 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = A6C349C021F19FA2007950D5 /* libc++.tbd */; };
+		A6C34A1521F1D6D1007950D5 /* JFTentcentHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = A6C34A1421F1D6D1007950D5 /* JFTentcentHandler.m */; };
 		CE5FA9DE8542121BADBCC9E7 /* Pods_JFTranslate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B363EBE70E560BED3797AB4 /* Pods_JFTranslate.framework */; };
 /* End PBXBuildFile section */
 
@@ -69,6 +76,28 @@
 		A68F8E8421EE0D0F00FEA2A9 /* Sogou.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = Sogou.js; sourceTree = "<group>"; };
 		A6C349BD21F05F3C007950D5 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		A6C349BE21F05F3C007950D5 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		A6C349C021F19FA2007950D5 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		A6C349C221F19FC3007950D5 /* libz.1.2.5.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.1.2.5.tbd; path = usr/lib/libz.1.2.5.tbd; sourceTree = SDKROOT; };
+		A6C349C421F19FD2007950D5 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		A6C349C621F19FDB007950D5 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		A6C349C821F19FE3007950D5 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		A6C349CA21F19FEC007950D5 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		A6C349CC21F19FF9007950D5 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		A6C349CE21F1A003007950D5 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		A6C349D021F1A00C007950D5 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		A6C349D921F1A21F007950D5 /* JFOnlineVoiceRecoTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JFOnlineVoiceRecoTool.h; sourceTree = "<group>"; };
+		A6C349DA21F1A21F007950D5 /* JFOnlineVoiceRecoTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JFOnlineVoiceRecoTool.m; sourceTree = "<group>"; };
+		A6C34A0321F1CA8C007950D5 /* DemoUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoUtil.h; sourceTree = "<group>"; };
+		A6C34A0421F1CA8C007950D5 /* base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = base64.h; sourceTree = "<group>"; };
+		A6C34A0521F1CA8C007950D5 /* base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = base64.m; sourceTree = "<group>"; };
+		A6C34A0621F1CA8C007950D5 /* DemoUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoUtil.m; sourceTree = "<group>"; };
+		A6C34A0921F1CA98007950D5 /* Congfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Congfig.h; sourceTree = "<group>"; };
+		A6C34A0A21F1CA98007950D5 /* Congfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Congfig.m; sourceTree = "<group>"; };
+		A6C34A0E21F1CAAE007950D5 /* QCloudAAIClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QCloudAAIClient.h; sourceTree = "<group>"; };
+		A6C34A0F21F1CAAF007950D5 /* libQCloudAAIClient.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libQCloudAAIClient.a; sourceTree = "<group>"; };
+		A6C34A1121F1D0C6007950D5 /* JFTranslate-Header.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JFTranslate-Header.pch"; sourceTree = "<group>"; };
+		A6C34A1321F1D6D1007950D5 /* JFTentcentHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JFTentcentHandler.h; sourceTree = "<group>"; };
+		A6C34A1421F1D6D1007950D5 /* JFTentcentHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JFTentcentHandler.m; sourceTree = "<group>"; };
 		B1DE4C274D5B136AC8797F01 /* Pods-JFTranslate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JFTranslate.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JFTranslate/Pods-JFTranslate.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -77,6 +106,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6C34A1221F1D2A9007950D5 /* libc++.tbd in Frameworks */,
+				A6C34A1021F1CAAF007950D5 /* libQCloudAAIClient.a in Frameworks */,
 				CE5FA9DE8542121BADBCC9E7 /* Pods_JFTranslate.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -101,6 +132,15 @@
 		4D2F4BF164E02E0D9C32E23B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A6C349D021F1A00C007950D5 /* GLKit.framework */,
+				A6C349CE21F1A003007950D5 /* SystemConfiguration.framework */,
+				A6C349CC21F19FF9007950D5 /* CoreTelephony.framework */,
+				A6C349CA21F19FEC007950D5 /* CoreLocation.framework */,
+				A6C349C821F19FE3007950D5 /* CFNetwork.framework */,
+				A6C349C621F19FDB007950D5 /* AVFoundation.framework */,
+				A6C349C421F19FD2007950D5 /* AudioToolbox.framework */,
+				A6C349C221F19FC3007950D5 /* libz.1.2.5.tbd */,
+				A6C349C021F19FA2007950D5 /* libc++.tbd */,
 				8B363EBE70E560BED3797AB4 /* Pods_JFTranslate.framework */,
 			);
 			name = Frameworks;
@@ -140,11 +180,17 @@
 		A68F8E4521EC379900FEA2A9 /* JFTranslate */ = {
 			isa = PBXGroup;
 			children = (
+				A6C34A0D21F1CAA8007950D5 /* Lib */,
+				A6C34A0221F1CA80007950D5 /* Utils */,
 				A68F8E8121EE0CD100FEA2A9 /* Source */,
 				A68F8E4621EC379900FEA2A9 /* AppDelegate.h */,
 				A68F8E4721EC379900FEA2A9 /* AppDelegate.m */,
 				A6C349BD21F05F3C007950D5 /* ViewController.h */,
 				A6C349BE21F05F3C007950D5 /* ViewController.m */,
+				A6C34A0921F1CA98007950D5 /* Congfig.h */,
+				A6C34A0A21F1CA98007950D5 /* Congfig.m */,
+				A6C349D921F1A21F007950D5 /* JFOnlineVoiceRecoTool.h */,
+				A6C349DA21F1A21F007950D5 /* JFOnlineVoiceRecoTool.m */,
 				A68F8E4921EC379900FEA2A9 /* JFViewController.h */,
 				A68F8E4A21EC379900FEA2A9 /* JFViewController.m */,
 				A68F8E7C21EDB6A600FEA2A9 /* JRNetworking.h */,
@@ -156,6 +202,9 @@
 				A68F8E5521EC379A00FEA2A9 /* main.m */,
 				A68F8E7E21EDBBFA00FEA2A9 /* JFUtils.h */,
 				A68F8E7F21EDBBFA00FEA2A9 /* JFUtils.m */,
+				A6C34A1121F1D0C6007950D5 /* JFTranslate-Header.pch */,
+				A6C34A1321F1D6D1007950D5 /* JFTentcentHandler.h */,
+				A6C34A1421F1D6D1007950D5 /* JFTentcentHandler.m */,
 			);
 			path = JFTranslate;
 			sourceTree = "<group>";
@@ -186,6 +235,26 @@
 				A68F8E8421EE0D0F00FEA2A9 /* Sogou.js */,
 			);
 			path = Source;
+			sourceTree = "<group>";
+		};
+		A6C34A0221F1CA80007950D5 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				A6C34A0321F1CA8C007950D5 /* DemoUtil.h */,
+				A6C34A0621F1CA8C007950D5 /* DemoUtil.m */,
+				A6C34A0421F1CA8C007950D5 /* base64.h */,
+				A6C34A0521F1CA8C007950D5 /* base64.m */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		A6C34A0D21F1CAA8007950D5 /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				A6C34A0F21F1CAAF007950D5 /* libQCloudAAIClient.a */,
+				A6C34A0E21F1CAAE007950D5 /* QCloudAAIClient.h */,
+			);
+			path = Lib;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -378,8 +447,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6C34A0721F1CA8C007950D5 /* base64.m in Sources */,
+				A6C34A0821F1CA8C007950D5 /* DemoUtil.m in Sources */,
+				A6C34A1521F1D6D1007950D5 /* JFTentcentHandler.m in Sources */,
+				A6C349DB21F1A21F007950D5 /* JFOnlineVoiceRecoTool.m in Sources */,
 				A6C349BF21F05F3C007950D5 /* ViewController.m in Sources */,
 				A68F8E7D21EDB6A700FEA2A9 /* JRNetworking.m in Sources */,
+				A6C34A0B21F1CA98007950D5 /* Congfig.m in Sources */,
 				A68F8E4B21EC379900FEA2A9 /* JFViewController.m in Sources */,
 				A68F8E5621EC379A00FEA2A9 /* main.m in Sources */,
 				A68F8E4821EC379900FEA2A9 /* AppDelegate.m in Sources */,
@@ -557,10 +631,31 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = X2B3LVG7M7;
+				ENABLE_BITCODE = NO;
+				GCC_PREFIX_HEADER = "/Users/work/JFRepository/JFTranslate/JFTranslate/JFTranslate-Header.pch";
 				INFOPLIST_FILE = JFTranslate/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/JFTranslate/Lib/BDSClientLib",
+					"$(PROJECT_DIR)/JFTranslate/Lib",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					"\"AFNetworking\"",
+					"-framework",
+					"\"MJRefresh\"",
+					"-framework",
+					"\"Masonry\"",
+					"-framework",
+					"\"SDWebImage\"",
+					"-framework",
+					"\"YYModel\"",
+					"-ObjC",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.hpf.JFTranslate;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -575,10 +670,31 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = X2B3LVG7M7;
+				ENABLE_BITCODE = NO;
+				GCC_PREFIX_HEADER = "/Users/work/JFRepository/JFTranslate/JFTranslate/JFTranslate-Header.pch";
 				INFOPLIST_FILE = JFTranslate/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/JFTranslate/Lib/BDSClientLib",
+					"$(PROJECT_DIR)/JFTranslate/Lib",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					"\"AFNetworking\"",
+					"-framework",
+					"\"MJRefresh\"",
+					"-framework",
+					"\"Masonry\"",
+					"-framework",
+					"\"SDWebImage\"",
+					"-framework",
+					"\"YYModel\"",
+					"-ObjC",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.hpf.JFTranslate;
 				PRODUCT_NAME = "$(TARGET_NAME)";
