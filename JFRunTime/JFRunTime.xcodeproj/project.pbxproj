@@ -1,0 +1,715 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		04F60AEDCB865496EF42FC7C /* Pods_JFRunTime.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03EF05D7A910918F77B48141 /* Pods_JFRunTime.framework */; };
+		A67CA4EF21F8370800CACFAF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A67CA4EE21F8370800CACFAF /* AppDelegate.m */; };
+		A67CA4F221F8370800CACFAF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A67CA4F121F8370800CACFAF /* ViewController.m */; };
+		A67CA4F521F8370800CACFAF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A67CA4F321F8370800CACFAF /* Main.storyboard */; };
+		A67CA4F721F8370900CACFAF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A67CA4F621F8370900CACFAF /* Assets.xcassets */; };
+		A67CA4FA21F8370900CACFAF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A67CA4F821F8370900CACFAF /* LaunchScreen.storyboard */; };
+		A67CA4FD21F8370900CACFAF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A67CA4FC21F8370900CACFAF /* main.m */; };
+		A67CA50721F8370900CACFAF /* JFRunTimeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A67CA50621F8370900CACFAF /* JFRunTimeTests.m */; };
+		A67CA51221F8370900CACFAF /* JFRunTimeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A67CA51121F8370900CACFAF /* JFRunTimeUITests.m */; };
+		A67CA52121F850E300CACFAF /* JFPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = A67CA52021F850E300CACFAF /* JFPerson.m */; };
+		A696000621F86BCF00497938 /* JFPage1Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = A696000521F86BCF00497938 /* JFPage1Controller.m */; };
+		A696000921F86BDA00497938 /* JFPage2Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = A696000821F86BDA00497938 /* JFPage2Controller.m */; };
+		A696000C21F86BE500497938 /* JFPage3Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = A696000B21F86BE500497938 /* JFPage3Controller.m */; };
+		A696000F21F86BF000497938 /* JFPage4Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = A696000E21F86BF000497938 /* JFPage4Controller.m */; };
+		A696001221F86BF800497938 /* JFPage5Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = A696001121F86BF800497938 /* JFPage5Controller.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A67CA50321F8370900CACFAF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A67CA4E221F8370800CACFAF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A67CA4E921F8370800CACFAF;
+			remoteInfo = JFRunTime;
+		};
+		A67CA50E21F8370900CACFAF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A67CA4E221F8370800CACFAF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A67CA4E921F8370800CACFAF;
+			remoteInfo = JFRunTime;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		03EF05D7A910918F77B48141 /* Pods_JFRunTime.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JFRunTime.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A67CA4EA21F8370800CACFAF /* JFRunTime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JFRunTime.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A67CA4ED21F8370800CACFAF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A67CA4EE21F8370800CACFAF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A67CA4F021F8370800CACFAF /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		A67CA4F121F8370800CACFAF /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		A67CA4F421F8370800CACFAF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A67CA4F621F8370900CACFAF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A67CA4F921F8370900CACFAF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A67CA4FB21F8370900CACFAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A67CA4FC21F8370900CACFAF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A67CA50221F8370900CACFAF /* JFRunTimeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JFRunTimeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A67CA50621F8370900CACFAF /* JFRunTimeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JFRunTimeTests.m; sourceTree = "<group>"; };
+		A67CA50821F8370900CACFAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A67CA50D21F8370900CACFAF /* JFRunTimeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JFRunTimeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A67CA51121F8370900CACFAF /* JFRunTimeUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JFRunTimeUITests.m; sourceTree = "<group>"; };
+		A67CA51321F8370900CACFAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A67CA51F21F850E300CACFAF /* JFPerson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JFPerson.h; sourceTree = "<group>"; };
+		A67CA52021F850E300CACFAF /* JFPerson.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JFPerson.m; sourceTree = "<group>"; };
+		A696000421F86BCF00497938 /* JFPage1Controller.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JFPage1Controller.h; sourceTree = "<group>"; };
+		A696000521F86BCF00497938 /* JFPage1Controller.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JFPage1Controller.m; sourceTree = "<group>"; };
+		A696000721F86BDA00497938 /* JFPage2Controller.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JFPage2Controller.h; sourceTree = "<group>"; };
+		A696000821F86BDA00497938 /* JFPage2Controller.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JFPage2Controller.m; sourceTree = "<group>"; };
+		A696000A21F86BE500497938 /* JFPage3Controller.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JFPage3Controller.h; sourceTree = "<group>"; };
+		A696000B21F86BE500497938 /* JFPage3Controller.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JFPage3Controller.m; sourceTree = "<group>"; };
+		A696000D21F86BF000497938 /* JFPage4Controller.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JFPage4Controller.h; sourceTree = "<group>"; };
+		A696000E21F86BF000497938 /* JFPage4Controller.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JFPage4Controller.m; sourceTree = "<group>"; };
+		A696001021F86BF800497938 /* JFPage5Controller.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JFPage5Controller.h; sourceTree = "<group>"; };
+		A696001121F86BF800497938 /* JFPage5Controller.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JFPage5Controller.m; sourceTree = "<group>"; };
+		B2CE70C3221D7441F7FFD687 /* Pods-JFRunTime.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JFRunTime.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JFRunTime/Pods-JFRunTime.debug.xcconfig"; sourceTree = "<group>"; };
+		FD9795F013FFA08D69C3A252 /* Pods-JFRunTime.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JFRunTime.release.xcconfig"; path = "Pods/Target Support Files/Pods-JFRunTime/Pods-JFRunTime.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A67CA4E721F8370800CACFAF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04F60AEDCB865496EF42FC7C /* Pods_JFRunTime.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A67CA4FF21F8370900CACFAF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A67CA50A21F8370900CACFAF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		10C364C90EE670E96A87DA48 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				03EF05D7A910918F77B48141 /* Pods_JFRunTime.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9ED70982F096E6623EBB7370 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B2CE70C3221D7441F7FFD687 /* Pods-JFRunTime.debug.xcconfig */,
+				FD9795F013FFA08D69C3A252 /* Pods-JFRunTime.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A67CA4E121F8370800CACFAF = {
+			isa = PBXGroup;
+			children = (
+				A67CA4EC21F8370800CACFAF /* JFRunTime */,
+				A67CA50521F8370900CACFAF /* JFRunTimeTests */,
+				A67CA51021F8370900CACFAF /* JFRunTimeUITests */,
+				A67CA4EB21F8370800CACFAF /* Products */,
+				9ED70982F096E6623EBB7370 /* Pods */,
+				10C364C90EE670E96A87DA48 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A67CA4EB21F8370800CACFAF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A67CA4EA21F8370800CACFAF /* JFRunTime.app */,
+				A67CA50221F8370900CACFAF /* JFRunTimeTests.xctest */,
+				A67CA50D21F8370900CACFAF /* JFRunTimeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A67CA4EC21F8370800CACFAF /* JFRunTime */ = {
+			isa = PBXGroup;
+			children = (
+				A696001321F86BFC00497938 /* PageController */,
+				A67CA4ED21F8370800CACFAF /* AppDelegate.h */,
+				A67CA4EE21F8370800CACFAF /* AppDelegate.m */,
+				A67CA4F021F8370800CACFAF /* ViewController.h */,
+				A67CA4F121F8370800CACFAF /* ViewController.m */,
+				A67CA51F21F850E300CACFAF /* JFPerson.h */,
+				A67CA52021F850E300CACFAF /* JFPerson.m */,
+				A67CA4F321F8370800CACFAF /* Main.storyboard */,
+				A67CA4F621F8370900CACFAF /* Assets.xcassets */,
+				A67CA4F821F8370900CACFAF /* LaunchScreen.storyboard */,
+				A67CA4FB21F8370900CACFAF /* Info.plist */,
+				A67CA4FC21F8370900CACFAF /* main.m */,
+			);
+			path = JFRunTime;
+			sourceTree = "<group>";
+		};
+		A67CA50521F8370900CACFAF /* JFRunTimeTests */ = {
+			isa = PBXGroup;
+			children = (
+				A67CA50621F8370900CACFAF /* JFRunTimeTests.m */,
+				A67CA50821F8370900CACFAF /* Info.plist */,
+			);
+			path = JFRunTimeTests;
+			sourceTree = "<group>";
+		};
+		A67CA51021F8370900CACFAF /* JFRunTimeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A67CA51121F8370900CACFAF /* JFRunTimeUITests.m */,
+				A67CA51321F8370900CACFAF /* Info.plist */,
+			);
+			path = JFRunTimeUITests;
+			sourceTree = "<group>";
+		};
+		A696001321F86BFC00497938 /* PageController */ = {
+			isa = PBXGroup;
+			children = (
+				A696000421F86BCF00497938 /* JFPage1Controller.h */,
+				A696000521F86BCF00497938 /* JFPage1Controller.m */,
+				A696000721F86BDA00497938 /* JFPage2Controller.h */,
+				A696000821F86BDA00497938 /* JFPage2Controller.m */,
+				A696000A21F86BE500497938 /* JFPage3Controller.h */,
+				A696000B21F86BE500497938 /* JFPage3Controller.m */,
+				A696000D21F86BF000497938 /* JFPage4Controller.h */,
+				A696000E21F86BF000497938 /* JFPage4Controller.m */,
+				A696001021F86BF800497938 /* JFPage5Controller.h */,
+				A696001121F86BF800497938 /* JFPage5Controller.m */,
+			);
+			path = PageController;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A67CA4E921F8370800CACFAF /* JFRunTime */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A67CA51621F8370900CACFAF /* Build configuration list for PBXNativeTarget "JFRunTime" */;
+			buildPhases = (
+				7C7495F704DB43F1208D5710 /* [CP] Check Pods Manifest.lock */,
+				A67CA4E621F8370800CACFAF /* Sources */,
+				A67CA4E721F8370800CACFAF /* Frameworks */,
+				A67CA4E821F8370800CACFAF /* Resources */,
+				8BA8ACAAD00EDEFA1EF71036 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JFRunTime;
+			productName = JFRunTime;
+			productReference = A67CA4EA21F8370800CACFAF /* JFRunTime.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A67CA50121F8370900CACFAF /* JFRunTimeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A67CA51921F8370900CACFAF /* Build configuration list for PBXNativeTarget "JFRunTimeTests" */;
+			buildPhases = (
+				A67CA4FE21F8370900CACFAF /* Sources */,
+				A67CA4FF21F8370900CACFAF /* Frameworks */,
+				A67CA50021F8370900CACFAF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A67CA50421F8370900CACFAF /* PBXTargetDependency */,
+			);
+			name = JFRunTimeTests;
+			productName = JFRunTimeTests;
+			productReference = A67CA50221F8370900CACFAF /* JFRunTimeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A67CA50C21F8370900CACFAF /* JFRunTimeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A67CA51C21F8370900CACFAF /* Build configuration list for PBXNativeTarget "JFRunTimeUITests" */;
+			buildPhases = (
+				A67CA50921F8370900CACFAF /* Sources */,
+				A67CA50A21F8370900CACFAF /* Frameworks */,
+				A67CA50B21F8370900CACFAF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A67CA50F21F8370900CACFAF /* PBXTargetDependency */,
+			);
+			name = JFRunTimeUITests;
+			productName = JFRunTimeUITests;
+			productReference = A67CA50D21F8370900CACFAF /* JFRunTimeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A67CA4E221F8370800CACFAF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = com.hpf;
+				TargetAttributes = {
+					A67CA4E921F8370800CACFAF = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					A67CA50121F8370900CACFAF = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = A67CA4E921F8370800CACFAF;
+					};
+					A67CA50C21F8370900CACFAF = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = A67CA4E921F8370800CACFAF;
+					};
+				};
+			};
+			buildConfigurationList = A67CA4E521F8370800CACFAF /* Build configuration list for PBXProject "JFRunTime" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A67CA4E121F8370800CACFAF;
+			productRefGroup = A67CA4EB21F8370800CACFAF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A67CA4E921F8370800CACFAF /* JFRunTime */,
+				A67CA50121F8370900CACFAF /* JFRunTimeTests */,
+				A67CA50C21F8370900CACFAF /* JFRunTimeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A67CA4E821F8370800CACFAF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A67CA4FA21F8370900CACFAF /* LaunchScreen.storyboard in Resources */,
+				A67CA4F721F8370900CACFAF /* Assets.xcassets in Resources */,
+				A67CA4F521F8370800CACFAF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A67CA50021F8370900CACFAF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A67CA50B21F8370900CACFAF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7C7495F704DB43F1208D5710 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JFRunTime-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8BA8ACAAD00EDEFA1EF71036 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-JFRunTime/Pods-JFRunTime-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework",
+				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/TYPagerController/TYPagerController.framework",
+				"${BUILT_PRODUCTS_DIR}/YYModel/YYModel.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJRefresh.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TYPagerController.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYModel.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JFRunTime/Pods-JFRunTime-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A67CA4E621F8370800CACFAF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A67CA52121F850E300CACFAF /* JFPerson.m in Sources */,
+				A696000F21F86BF000497938 /* JFPage4Controller.m in Sources */,
+				A696001221F86BF800497938 /* JFPage5Controller.m in Sources */,
+				A67CA4F221F8370800CACFAF /* ViewController.m in Sources */,
+				A696000C21F86BE500497938 /* JFPage3Controller.m in Sources */,
+				A696000921F86BDA00497938 /* JFPage2Controller.m in Sources */,
+				A67CA4FD21F8370900CACFAF /* main.m in Sources */,
+				A696000621F86BCF00497938 /* JFPage1Controller.m in Sources */,
+				A67CA4EF21F8370800CACFAF /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A67CA4FE21F8370900CACFAF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A67CA50721F8370900CACFAF /* JFRunTimeTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A67CA50921F8370900CACFAF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A67CA51221F8370900CACFAF /* JFRunTimeUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A67CA50421F8370900CACFAF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A67CA4E921F8370800CACFAF /* JFRunTime */;
+			targetProxy = A67CA50321F8370900CACFAF /* PBXContainerItemProxy */;
+		};
+		A67CA50F21F8370900CACFAF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A67CA4E921F8370800CACFAF /* JFRunTime */;
+			targetProxy = A67CA50E21F8370900CACFAF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A67CA4F321F8370800CACFAF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A67CA4F421F8370800CACFAF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A67CA4F821F8370900CACFAF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A67CA4F921F8370900CACFAF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A67CA51421F8370900CACFAF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		A67CA51521F8370900CACFAF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A67CA51721F8370900CACFAF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B2CE70C3221D7441F7FFD687 /* Pods-JFRunTime.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X2B3LVG7M7;
+				INFOPLIST_FILE = JFRunTime/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hpf.JFRunTime;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A67CA51821F8370900CACFAF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD9795F013FFA08D69C3A252 /* Pods-JFRunTime.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X2B3LVG7M7;
+				INFOPLIST_FILE = JFRunTime/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hpf.JFRunTime;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A67CA51A21F8370900CACFAF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X2B3LVG7M7;
+				INFOPLIST_FILE = JFRunTimeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hpf.JFRunTimeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JFRunTime.app/JFRunTime";
+			};
+			name = Debug;
+		};
+		A67CA51B21F8370900CACFAF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X2B3LVG7M7;
+				INFOPLIST_FILE = JFRunTimeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hpf.JFRunTimeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JFRunTime.app/JFRunTime";
+			};
+			name = Release;
+		};
+		A67CA51D21F8370900CACFAF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X2B3LVG7M7;
+				INFOPLIST_FILE = JFRunTimeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hpf.JFRunTimeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = JFRunTime;
+			};
+			name = Debug;
+		};
+		A67CA51E21F8370900CACFAF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X2B3LVG7M7;
+				INFOPLIST_FILE = JFRunTimeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hpf.JFRunTimeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = JFRunTime;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A67CA4E521F8370800CACFAF /* Build configuration list for PBXProject "JFRunTime" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A67CA51421F8370900CACFAF /* Debug */,
+				A67CA51521F8370900CACFAF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A67CA51621F8370900CACFAF /* Build configuration list for PBXNativeTarget "JFRunTime" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A67CA51721F8370900CACFAF /* Debug */,
+				A67CA51821F8370900CACFAF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A67CA51921F8370900CACFAF /* Build configuration list for PBXNativeTarget "JFRunTimeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A67CA51A21F8370900CACFAF /* Debug */,
+				A67CA51B21F8370900CACFAF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A67CA51C21F8370900CACFAF /* Build configuration list for PBXNativeTarget "JFRunTimeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A67CA51D21F8370900CACFAF /* Debug */,
+				A67CA51E21F8370900CACFAF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A67CA4E221F8370800CACFAF /* Project object */;
+}

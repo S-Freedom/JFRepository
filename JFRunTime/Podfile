@@ -1,0 +1,13 @@
+platform :ios, '9.0'
+
+target 'JFRunTime' do
+use_frameworks!
+
+    pod 'AFNetworking'
+    pod 'YYModel'
+    pod 'Masonry'
+    pod 'MJRefresh'
+    pod 'SDWebImage'
+    pod 'MBProgressHUD',    '1.1.0'
+    pod 'TYPagerController'
+end
