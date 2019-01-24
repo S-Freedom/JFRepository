@@ -33,6 +33,11 @@
     return YES;
 }
 
+- (BOOL)isWalking:(CGFloat)speed tool:(NSString *)tool{
+    NSLog(@"%s", __func__);
+    return YES;
+}
+
 - (NSString *)getFirstName{
     
     NSLog(@"%s", __func__);

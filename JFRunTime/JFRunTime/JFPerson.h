@@ -17,12 +17,20 @@ NS_ASSUME_NONNULL_BEGIN
 }
 @property (nonatomic, copy) NSString *name;
 @property (nonatomic, assign) NSInteger age;
+@property (nonatomic, assign) NSMutableArray *arms;
+@property (nonatomic, assign) NSMutableDictionary *infoDic;
 @property (nonatomic, copy) void (^eatBlock)(void);
 @property (nonatomic, copy) void (^walkBlock)(NSString *road);
 
 - (void)eat;
 - (void)run:(CGFloat)speed;
 - (BOOL)isWalking;
+/**
+ *  返回是否走路，传入速度和工具
+ *  @param speed 速度  tool 工具
+ *  @return BOOL 返回yes or no
+ */
+- (BOOL)isWalking:(CGFloat)speed tool:(NSString *)tool;
 - (BOOL)isWalkingForSpeed:(CGFloat)speed;
 - (NSString *)getFirstName;
 + (NSString *)getClassName;
