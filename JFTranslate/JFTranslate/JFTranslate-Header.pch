@@ -9,9 +9,11 @@
 #ifndef JFTranslate_Header_h
 #define JFTranslate_Header_h
 
+// 腾讯云 访问管理->云API秘钥 -> API秘钥管理下面
 #define kAppId @"1252135216"
-#define kProjectId @"1137102"
 #define kSid @"AKIDOQar17M9n8TdNkLMWKsB6zcuiNYFZTUi"
 #define kKey @"EzsVvChmo0B481ci2NdM1xbJ89oYqReU"
+// 腾讯云 项目管理下面
+#define kProjectId @"1137102"
 
 #endif /* JFTranslate_Header_h */
