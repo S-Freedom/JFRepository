@@ -1,0 +1,644 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A64760F021F9ECAA0015E4B2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A64760EF21F9ECAA0015E4B2 /* AppDelegate.m */; };
+		A64760F321F9ECAA0015E4B2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A64760F221F9ECAA0015E4B2 /* ViewController.m */; };
+		A64760F621F9ECAA0015E4B2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A64760F421F9ECAA0015E4B2 /* Main.storyboard */; };
+		A64760F821F9ECAB0015E4B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A64760F721F9ECAB0015E4B2 /* Assets.xcassets */; };
+		A64760FB21F9ECAB0015E4B2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A64760F921F9ECAB0015E4B2 /* LaunchScreen.storyboard */; };
+		A64760FE21F9ECAB0015E4B2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A64760FD21F9ECAB0015E4B2 /* main.m */; };
+		A647610821F9ECAB0015E4B2 /* JFTTVoiceRecTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A647610721F9ECAB0015E4B2 /* JFTTVoiceRecTests.m */; };
+		A647611321F9ECAB0015E4B2 /* JFTTVoiceRecUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A647611221F9ECAB0015E4B2 /* JFTTVoiceRecUITests.m */; };
+		A647612821F9ED050015E4B2 /* base64.m in Sources */ = {isa = PBXBuildFile; fileRef = A647612321F9ED050015E4B2 /* base64.m */; };
+		A647612921F9ED050015E4B2 /* DemoUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = A647612421F9ED050015E4B2 /* DemoUtil.m */; };
+		A647612A21F9ED050015E4B2 /* libQCloudAAIClient.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A647612621F9ED050015E4B2 /* libQCloudAAIClient.a */; };
+		A647612E21F9ED430015E4B2 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = A647612D21F9ED430015E4B2 /* libc++.tbd */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A647610421F9ECAB0015E4B2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A64760E321F9ECAA0015E4B2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A64760EA21F9ECAA0015E4B2;
+			remoteInfo = JFTTVoiceRec;
+		};
+		A647610F21F9ECAB0015E4B2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A64760E321F9ECAA0015E4B2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A64760EA21F9ECAA0015E4B2;
+			remoteInfo = JFTTVoiceRec;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A64760EB21F9ECAA0015E4B2 /* JFTTVoiceRec.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JFTTVoiceRec.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A64760EE21F9ECAA0015E4B2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A64760EF21F9ECAA0015E4B2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A64760F121F9ECAA0015E4B2 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		A64760F221F9ECAA0015E4B2 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		A64760F521F9ECAA0015E4B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A64760F721F9ECAB0015E4B2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A64760FA21F9ECAB0015E4B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A64760FC21F9ECAB0015E4B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A64760FD21F9ECAB0015E4B2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A647610321F9ECAB0015E4B2 /* JFTTVoiceRecTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JFTTVoiceRecTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A647610721F9ECAB0015E4B2 /* JFTTVoiceRecTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JFTTVoiceRecTests.m; sourceTree = "<group>"; };
+		A647610921F9ECAB0015E4B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A647610E21F9ECAB0015E4B2 /* JFTTVoiceRecUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JFTTVoiceRecUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A647611221F9ECAB0015E4B2 /* JFTTVoiceRecUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JFTTVoiceRecUITests.m; sourceTree = "<group>"; };
+		A647611421F9ECAB0015E4B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A647612121F9ED050015E4B2 /* base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = base64.h; sourceTree = "<group>"; };
+		A647612221F9ED050015E4B2 /* DemoUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoUtil.h; sourceTree = "<group>"; };
+		A647612321F9ED050015E4B2 /* base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = base64.m; sourceTree = "<group>"; };
+		A647612421F9ED050015E4B2 /* DemoUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoUtil.m; sourceTree = "<group>"; };
+		A647612621F9ED050015E4B2 /* libQCloudAAIClient.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libQCloudAAIClient.a; sourceTree = "<group>"; };
+		A647612721F9ED050015E4B2 /* QCloudAAIClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QCloudAAIClient.h; sourceTree = "<group>"; };
+		A647612B21F9ED1E0015E4B2 /* JFTTVoiceRec-Header.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JFTTVoiceRec-Header.pch"; sourceTree = "<group>"; };
+		A647612D21F9ED430015E4B2 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A64760E821F9ECAA0015E4B2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A647612E21F9ED430015E4B2 /* libc++.tbd in Frameworks */,
+				A647612A21F9ED050015E4B2 /* libQCloudAAIClient.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A647610021F9ECAB0015E4B2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A647610B21F9ECAB0015E4B2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A64760E221F9ECAA0015E4B2 = {
+			isa = PBXGroup;
+			children = (
+				A64760ED21F9ECAA0015E4B2 /* JFTTVoiceRec */,
+				A647610621F9ECAB0015E4B2 /* JFTTVoiceRecTests */,
+				A647611121F9ECAB0015E4B2 /* JFTTVoiceRecUITests */,
+				A64760EC21F9ECAA0015E4B2 /* Products */,
+				A647612C21F9ED430015E4B2 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A64760EC21F9ECAA0015E4B2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A64760EB21F9ECAA0015E4B2 /* JFTTVoiceRec.app */,
+				A647610321F9ECAB0015E4B2 /* JFTTVoiceRecTests.xctest */,
+				A647610E21F9ECAB0015E4B2 /* JFTTVoiceRecUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A64760ED21F9ECAA0015E4B2 /* JFTTVoiceRec */ = {
+			isa = PBXGroup;
+			children = (
+				A647612521F9ED050015E4B2 /* Lib */,
+				A647612021F9ED050015E4B2 /* Utils */,
+				A64760EE21F9ECAA0015E4B2 /* AppDelegate.h */,
+				A64760EF21F9ECAA0015E4B2 /* AppDelegate.m */,
+				A64760F121F9ECAA0015E4B2 /* ViewController.h */,
+				A64760F221F9ECAA0015E4B2 /* ViewController.m */,
+				A64760F421F9ECAA0015E4B2 /* Main.storyboard */,
+				A64760F721F9ECAB0015E4B2 /* Assets.xcassets */,
+				A64760F921F9ECAB0015E4B2 /* LaunchScreen.storyboard */,
+				A64760FC21F9ECAB0015E4B2 /* Info.plist */,
+				A64760FD21F9ECAB0015E4B2 /* main.m */,
+				A647612B21F9ED1E0015E4B2 /* JFTTVoiceRec-Header.pch */,
+			);
+			path = JFTTVoiceRec;
+			sourceTree = "<group>";
+		};
+		A647610621F9ECAB0015E4B2 /* JFTTVoiceRecTests */ = {
+			isa = PBXGroup;
+			children = (
+				A647610721F9ECAB0015E4B2 /* JFTTVoiceRecTests.m */,
+				A647610921F9ECAB0015E4B2 /* Info.plist */,
+			);
+			path = JFTTVoiceRecTests;
+			sourceTree = "<group>";
+		};
+		A647611121F9ECAB0015E4B2 /* JFTTVoiceRecUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A647611221F9ECAB0015E4B2 /* JFTTVoiceRecUITests.m */,
+				A647611421F9ECAB0015E4B2 /* Info.plist */,
+			);
+			path = JFTTVoiceRecUITests;
+			sourceTree = "<group>";
+		};
+		A647612021F9ED050015E4B2 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				A647612121F9ED050015E4B2 /* base64.h */,
+				A647612221F9ED050015E4B2 /* DemoUtil.h */,
+				A647612321F9ED050015E4B2 /* base64.m */,
+				A647612421F9ED050015E4B2 /* DemoUtil.m */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		A647612521F9ED050015E4B2 /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				A647612621F9ED050015E4B2 /* libQCloudAAIClient.a */,
+				A647612721F9ED050015E4B2 /* QCloudAAIClient.h */,
+			);
+			path = Lib;
+			sourceTree = "<group>";
+		};
+		A647612C21F9ED430015E4B2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A647612D21F9ED430015E4B2 /* libc++.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A64760EA21F9ECAA0015E4B2 /* JFTTVoiceRec */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A647611721F9ECAB0015E4B2 /* Build configuration list for PBXNativeTarget "JFTTVoiceRec" */;
+			buildPhases = (
+				A64760E721F9ECAA0015E4B2 /* Sources */,
+				A64760E821F9ECAA0015E4B2 /* Frameworks */,
+				A64760E921F9ECAA0015E4B2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JFTTVoiceRec;
+			productName = JFTTVoiceRec;
+			productReference = A64760EB21F9ECAA0015E4B2 /* JFTTVoiceRec.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A647610221F9ECAB0015E4B2 /* JFTTVoiceRecTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A647611A21F9ECAB0015E4B2 /* Build configuration list for PBXNativeTarget "JFTTVoiceRecTests" */;
+			buildPhases = (
+				A64760FF21F9ECAB0015E4B2 /* Sources */,
+				A647610021F9ECAB0015E4B2 /* Frameworks */,
+				A647610121F9ECAB0015E4B2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A647610521F9ECAB0015E4B2 /* PBXTargetDependency */,
+			);
+			name = JFTTVoiceRecTests;
+			productName = JFTTVoiceRecTests;
+			productReference = A647610321F9ECAB0015E4B2 /* JFTTVoiceRecTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A647610D21F9ECAB0015E4B2 /* JFTTVoiceRecUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A647611D21F9ECAB0015E4B2 /* Build configuration list for PBXNativeTarget "JFTTVoiceRecUITests" */;
+			buildPhases = (
+				A647610A21F9ECAB0015E4B2 /* Sources */,
+				A647610B21F9ECAB0015E4B2 /* Frameworks */,
+				A647610C21F9ECAB0015E4B2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A647611021F9ECAB0015E4B2 /* PBXTargetDependency */,
+			);
+			name = JFTTVoiceRecUITests;
+			productName = JFTTVoiceRecUITests;
+			productReference = A647610E21F9ECAB0015E4B2 /* JFTTVoiceRecUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A64760E321F9ECAA0015E4B2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = com.hpf;
+				TargetAttributes = {
+					A64760EA21F9ECAA0015E4B2 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					A647610221F9ECAB0015E4B2 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = A64760EA21F9ECAA0015E4B2;
+					};
+					A647610D21F9ECAB0015E4B2 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = A64760EA21F9ECAA0015E4B2;
+					};
+				};
+			};
+			buildConfigurationList = A64760E621F9ECAA0015E4B2 /* Build configuration list for PBXProject "JFTTVoiceRec" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A64760E221F9ECAA0015E4B2;
+			productRefGroup = A64760EC21F9ECAA0015E4B2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A64760EA21F9ECAA0015E4B2 /* JFTTVoiceRec */,
+				A647610221F9ECAB0015E4B2 /* JFTTVoiceRecTests */,
+				A647610D21F9ECAB0015E4B2 /* JFTTVoiceRecUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A64760E921F9ECAA0015E4B2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A64760FB21F9ECAB0015E4B2 /* LaunchScreen.storyboard in Resources */,
+				A64760F821F9ECAB0015E4B2 /* Assets.xcassets in Resources */,
+				A64760F621F9ECAA0015E4B2 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A647610121F9ECAB0015E4B2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A647610C21F9ECAB0015E4B2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A64760E721F9ECAA0015E4B2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A647612821F9ED050015E4B2 /* base64.m in Sources */,
+				A647612921F9ED050015E4B2 /* DemoUtil.m in Sources */,
+				A64760F321F9ECAA0015E4B2 /* ViewController.m in Sources */,
+				A64760FE21F9ECAB0015E4B2 /* main.m in Sources */,
+				A64760F021F9ECAA0015E4B2 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A64760FF21F9ECAB0015E4B2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A647610821F9ECAB0015E4B2 /* JFTTVoiceRecTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A647610A21F9ECAB0015E4B2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A647611321F9ECAB0015E4B2 /* JFTTVoiceRecUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A647610521F9ECAB0015E4B2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A64760EA21F9ECAA0015E4B2 /* JFTTVoiceRec */;
+			targetProxy = A647610421F9ECAB0015E4B2 /* PBXContainerItemProxy */;
+		};
+		A647611021F9ECAB0015E4B2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A64760EA21F9ECAA0015E4B2 /* JFTTVoiceRec */;
+			targetProxy = A647610F21F9ECAB0015E4B2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A64760F421F9ECAA0015E4B2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A64760F521F9ECAA0015E4B2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A64760F921F9ECAB0015E4B2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A64760FA21F9ECAB0015E4B2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A647611521F9ECAB0015E4B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		A647611621F9ECAB0015E4B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A647611821F9ECAB0015E4B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X2B3LVG7M7;
+				GCC_PREFIX_HEADER = "/Users/work/JFRepository/JFTTVoiceRec/JFTTVoiceRec/JFTTVoiceRec-Header.pch";
+				INFOPLIST_FILE = JFTTVoiceRec/Info.plist;
+				LD_QUOTE_LINKER_ARGUMENTS_FOR_COMPILER_DRIVER = NO;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/JFTTVoiceRec/Lib",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hpf.JFTTVoiceRec;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A647611921F9ECAB0015E4B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X2B3LVG7M7;
+				GCC_PREFIX_HEADER = "/Users/work/JFRepository/JFTTVoiceRec/JFTTVoiceRec/JFTTVoiceRec-Header.pch";
+				INFOPLIST_FILE = JFTTVoiceRec/Info.plist;
+				LD_QUOTE_LINKER_ARGUMENTS_FOR_COMPILER_DRIVER = NO;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/JFTTVoiceRec/Lib",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hpf.JFTTVoiceRec;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A647611B21F9ECAB0015E4B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X2B3LVG7M7;
+				INFOPLIST_FILE = JFTTVoiceRecTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hpf.JFTTVoiceRecTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JFTTVoiceRec.app/JFTTVoiceRec";
+			};
+			name = Debug;
+		};
+		A647611C21F9ECAB0015E4B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X2B3LVG7M7;
+				INFOPLIST_FILE = JFTTVoiceRecTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hpf.JFTTVoiceRecTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JFTTVoiceRec.app/JFTTVoiceRec";
+			};
+			name = Release;
+		};
+		A647611E21F9ECAB0015E4B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X2B3LVG7M7;
+				INFOPLIST_FILE = JFTTVoiceRecUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hpf.JFTTVoiceRecUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = JFTTVoiceRec;
+			};
+			name = Debug;
+		};
+		A647611F21F9ECAB0015E4B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X2B3LVG7M7;
+				INFOPLIST_FILE = JFTTVoiceRecUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hpf.JFTTVoiceRecUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = JFTTVoiceRec;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A64760E621F9ECAA0015E4B2 /* Build configuration list for PBXProject "JFTTVoiceRec" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A647611521F9ECAB0015E4B2 /* Debug */,
+				A647611621F9ECAB0015E4B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A647611721F9ECAB0015E4B2 /* Build configuration list for PBXNativeTarget "JFTTVoiceRec" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A647611821F9ECAB0015E4B2 /* Debug */,
+				A647611921F9ECAB0015E4B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A647611A21F9ECAB0015E4B2 /* Build configuration list for PBXNativeTarget "JFTTVoiceRecTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A647611B21F9ECAB0015E4B2 /* Debug */,
+				A647611C21F9ECAB0015E4B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A647611D21F9ECAB0015E4B2 /* Build configuration list for PBXNativeTarget "JFTTVoiceRecUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A647611E21F9ECAB0015E4B2 /* Debug */,
+				A647611F21F9ECAB0015E4B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A64760E321F9ECAA0015E4B2 /* Project object */;
+}

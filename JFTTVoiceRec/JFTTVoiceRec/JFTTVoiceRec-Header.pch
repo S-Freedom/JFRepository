@@ -1,0 +1,18 @@
+//
+//  JFTTVoiceRec-Header.pch
+//  JFTTVoiceRec
+//
+//  Created by 黄鹏飞 on 2019/1/24.
+//  Copyright © 2019 com.hpf. All rights reserved.
+//
+
+#ifndef JFTTVoiceRec_Header_h
+#define JFTTVoiceRec_Header_h
+
+// 腾讯云 访问管理->云API秘钥 -> API秘钥管理下面
+#define kAppId @"1252135216"
+#define kSid @"AKIDOQar17M9n8TdNkLMWKsB6zcuiNYFZTUi"
+#define kKey @"EzsVvChmo0B481ci2NdM1xbJ89oYqReU"
+// 腾讯云 项目管理下面
+#define kProjectId @"1137102"
+#endif /* JFTTVoiceRec_Header_h */
