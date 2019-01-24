@@ -52,8 +52,20 @@
 
 @end
 
+@interface JFStudent()
+{
+    int stuHobby;
+    NSString *stuInfo;
+}
+// 所在年级
+@property (nonatomic, assign) NSInteger classLevel;
+@end
+
 @implementation JFStudent
 
+- (void)privateStudentMtd{
+    NSLog(@"%s", __func__);
+}
 - (void)studyWithName:(NSString *)sName{
     NSLog(@"%s", __func__);
 }

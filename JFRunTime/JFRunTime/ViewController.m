@@ -59,44 +59,44 @@
 // Display customization
 // the same to viewWillAppear, also can use viewController's viewWillAppear
 - (void)pagerController:(TYPagerController *)pagerController viewWillAppear:(UIViewController *)viewController forIndex:(NSInteger)index{
-    NSLog(@"%s", __func__);
+//    NSLog(@"%s", __func__);
 }
 
 - (void)pagerController:(TYPagerController *)pagerController viewDidAppear:(UIViewController *)viewController forIndex:(NSInteger)index{
-    NSLog(@"%s", __func__);
+//    NSLog(@"%s", __func__);
 }
 
 // Disappear customization
 // the same to viewWillDisappear, also can use viewController's viewWillDisappear
 - (void)pagerController:(TYPagerController *)pagerController viewWillDisappear:(UIViewController *)viewController forIndex:(NSInteger)index{
-    NSLog(@"%s", __func__);
+//    NSLog(@"%s", __func__);
 }
 
 - (void)pagerController:(TYPagerController *)pagerController viewDidDisappear:(UIViewController *)viewController forIndex:(NSInteger)index{
-    NSLog(@"%s", __func__);
+//    NSLog(@"%s", __func__);
 }
 // Transition animation customization
 
 - (void)pagerController:(TYPagerController *)pagerController transitionFromIndex:(NSInteger)fromIndex toIndex:(NSInteger)toIndex animated:(BOOL)animated{
-    NSLog(@"%s", __func__);
+//    NSLog(@"%s", __func__);
 }
 
 - (void)pagerController:(TYPagerController *)pagerController transitionFromIndex:(NSInteger)fromIndex toIndex:(NSInteger)toIndex progress:(CGFloat)progress{
-    NSLog(@"%s", __func__);
+//    NSLog(@"%s", __func__);
 }
 
 // ScrollViewDelegate
 
 - (void)pagerControllerDidScroll:(TYPagerController *)pagerController{
-    NSLog(@"%s", __func__);
+//    NSLog(@"%s", __func__);
 }
 
 - (void)pagerControllerWillBeginScrolling:(TYPagerController *)pagerController animate:(BOOL)animate{
-    NSLog(@"%s", __func__);
+//    NSLog(@"%s", __func__);
 }
 
 - (void)pagerControllerDidEndScrolling:(TYPagerController *)pagerController animate:(BOOL)animate{
-    NSLog(@"%s", __func__);
+//    NSLog(@"%s", __func__);
 }
 
 - (JFPage1Controller *)page1VC{
