@@ -112,6 +112,7 @@ static CGFloat weight = 25.0f;
                     [strongSelf.showArr addObject:tip];
                     strongSelf.desLabel.text = [strongSelf getResultText];
                     strongSelf.tipFlag = YES;
+                    break;
                 }
                 
                 if(strongSelf.curIndex >= strongSelf.mArr.count) break;
