@@ -53,7 +53,7 @@ alpha:1.0]
         _client.delegate = self;
         [_client setSilenceTime:self.silenceTime];
         [_client openHTTPSrequset:YES];
-        _client.res_type = 0;
+        _client.res_type = 1;
         [_client setSilenceEndDetection:NO];
     }
     return _client;
@@ -65,6 +65,8 @@ alpha:1.0]
 }
 
 - (void)startHandler:(HandlerBlock)handler stateChange:(VoiceStateBlock)voiceState{
+    
+//    [self.client stop];
     
     [self.client startDetectionWihtCompletionHandle:^(QCloudAAIRsp *rsp) {
         NSString *voiceId = rsp.voiceId;

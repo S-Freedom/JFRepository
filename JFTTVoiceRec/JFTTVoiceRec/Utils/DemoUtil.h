@@ -12,4 +12,9 @@
 
 + (NSString *)hmacsha1:(NSString *)data secret:(NSString *)key;
 
+// 过滤标点
++ (NSString *)filterIllegalChar:(NSString *)str;
+
+// 汉子转拼音
++ (NSString *)convertHZ2PY:(NSString *)string;
 @end

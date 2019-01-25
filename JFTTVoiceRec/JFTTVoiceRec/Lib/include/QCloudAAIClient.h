@@ -2,8 +2,7 @@
 //  QCloudAAIClient.h
 //  QCloudAAIClient
 //
-//  Created by 贾立飞 on 2017/2/20.
-//  Copyright © 2017年 tencent. All rights reserved.
+//  Copyright © 2018年 tencent. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -108,9 +107,11 @@ typedef void (^QCloudAAIChangeHandler)(QCloudAAIState state);
 
 -(id)initWithAppid:(NSString *)appid secretid:(NSString *)sid  projectId:(NSString *)pid;
 
--(void)startDetectionWihtCompletionHandle:(QCloudAAICompletionHandler)handler stateChange:(QCloudAAIChangeHandler)stateChange;
+-(BOOL)startDetectionWihtCompletionHandle:(QCloudAAICompletionHandler)handler stateChange:(QCloudAAIChangeHandler)stateChange;
 
--(void)stop;
+-(BOOL)stop;
+
+-(BOOL)pause;
 
 -(double)getAudioVolume;
 

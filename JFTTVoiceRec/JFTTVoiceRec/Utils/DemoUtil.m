@@ -33,4 +33,29 @@
     return base64EncodedResult;
 }
 
+
++ (NSString *)filterIllegalChar:(NSString *)str
+{
+    
+    NSError *error = nil;
+    NSRegularExpression *regex = [NSRegularExpression regularExpressionWithPattern:@"[\\p{P}~^<>]" options:NSRegularExpressionCaseInsensitive error:&error];//这个正则可以去掉所有的符号，空格除外
+    NSString *modifiedString = [regex stringByReplacingMatchesInString:str options:0 range:NSMakeRange(0, [str length]) withTemplate:@""];
+    NSString *replaceBlank=[modifiedString stringByReplacingOccurrencesOfString:@" " withString:@"_"];//再将空格转化成下划线，因为空格也不可以设置标签
+   return replaceBlank;
+}
+
+// 汉子转拼音
++ (NSString *)convertHZ2PY:(NSString *)string{
+    
+    NSMutableString *mStr = [[NSMutableString alloc] initWithString:string];
+    if (CFStringTransform((__bridge CFMutableStringRef)mStr, 0, kCFStringTransformMandarinLatin, NO)) {
+//        NSLog(@"Pingying: %@", mStr);
+    }
+    
+    if (CFStringTransform((__bridge CFMutableStringRef)mStr, 0, kCFStringTransformStripDiacritics, NO)) {
+        NSLog(@"Pingying: %@", mStr);
+        return mStr;
+    }
+    return @"";
+}
 @end

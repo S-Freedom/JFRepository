@@ -17,8 +17,12 @@
 		A647611321F9ECAB0015E4B2 /* JFTTVoiceRecUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A647611221F9ECAB0015E4B2 /* JFTTVoiceRecUITests.m */; };
 		A647612821F9ED050015E4B2 /* base64.m in Sources */ = {isa = PBXBuildFile; fileRef = A647612321F9ED050015E4B2 /* base64.m */; };
 		A647612921F9ED050015E4B2 /* DemoUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = A647612421F9ED050015E4B2 /* DemoUtil.m */; };
-		A647612A21F9ED050015E4B2 /* libQCloudAAIClient.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A647612621F9ED050015E4B2 /* libQCloudAAIClient.a */; };
 		A647612E21F9ED430015E4B2 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = A647612D21F9ED430015E4B2 /* libc++.tbd */; };
+		A647613C21F9EE000015E4B2 /* Congfig.m in Sources */ = {isa = PBXBuildFile; fileRef = A647613821F9EE000015E4B2 /* Congfig.m */; };
+		A647613D21F9EE000015E4B2 /* JFOnlineVoiceRecoTool.m in Sources */ = {isa = PBXBuildFile; fileRef = A647613A21F9EE000015E4B2 /* JFOnlineVoiceRecoTool.m */; };
+		A647614021F9EE0B0015E4B2 /* JFTentcentHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = A647613F21F9EE0B0015E4B2 /* JFTentcentHandler.m */; };
+		A647614621FAB4340015E4B2 /* libQCloudAAIClient.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A647614321FAB4340015E4B2 /* libQCloudAAIClient.a */; };
+		A647614C21FB2F190015E4B2 /* NSString+Distance.m in Sources */ = {isa = PBXBuildFile; fileRef = A647614B21FB2F190015E4B2 /* NSString+Distance.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,10 +63,18 @@
 		A647612221F9ED050015E4B2 /* DemoUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoUtil.h; sourceTree = "<group>"; };
 		A647612321F9ED050015E4B2 /* base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = base64.m; sourceTree = "<group>"; };
 		A647612421F9ED050015E4B2 /* DemoUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoUtil.m; sourceTree = "<group>"; };
-		A647612621F9ED050015E4B2 /* libQCloudAAIClient.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libQCloudAAIClient.a; sourceTree = "<group>"; };
-		A647612721F9ED050015E4B2 /* QCloudAAIClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QCloudAAIClient.h; sourceTree = "<group>"; };
 		A647612B21F9ED1E0015E4B2 /* JFTTVoiceRec-Header.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JFTTVoiceRec-Header.pch"; sourceTree = "<group>"; };
 		A647612D21F9ED430015E4B2 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		A647613821F9EE000015E4B2 /* Congfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Congfig.m; path = ../../JFTranslate/JFTranslate/Congfig.m; sourceTree = "<group>"; };
+		A647613921F9EE000015E4B2 /* Congfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Congfig.h; path = ../../JFTranslate/JFTranslate/Congfig.h; sourceTree = "<group>"; };
+		A647613A21F9EE000015E4B2 /* JFOnlineVoiceRecoTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JFOnlineVoiceRecoTool.m; path = ../../JFTranslate/JFTranslate/JFOnlineVoiceRecoTool.m; sourceTree = "<group>"; };
+		A647613B21F9EE000015E4B2 /* JFOnlineVoiceRecoTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JFOnlineVoiceRecoTool.h; path = ../../JFTranslate/JFTranslate/JFOnlineVoiceRecoTool.h; sourceTree = "<group>"; };
+		A647613E21F9EE0B0015E4B2 /* JFTentcentHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JFTentcentHandler.h; path = ../../JFTranslate/JFTranslate/JFTentcentHandler.h; sourceTree = "<group>"; };
+		A647613F21F9EE0B0015E4B2 /* JFTentcentHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JFTentcentHandler.m; path = ../../JFTranslate/JFTranslate/JFTentcentHandler.m; sourceTree = "<group>"; };
+		A647614321FAB4340015E4B2 /* libQCloudAAIClient.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libQCloudAAIClient.a; sourceTree = "<group>"; };
+		A647614521FAB4340015E4B2 /* QCloudAAIClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QCloudAAIClient.h; sourceTree = "<group>"; };
+		A647614A21FB2F190015E4B2 /* NSString+Distance.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+Distance.h"; sourceTree = "<group>"; };
+		A647614B21FB2F190015E4B2 /* NSString+Distance.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+Distance.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,8 +82,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A647614621FAB4340015E4B2 /* libQCloudAAIClient.a in Frameworks */,
 				A647612E21F9ED430015E4B2 /* libc++.tbd in Frameworks */,
-				A647612A21F9ED050015E4B2 /* libQCloudAAIClient.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -116,12 +128,18 @@
 		A64760ED21F9ECAA0015E4B2 /* JFTTVoiceRec */ = {
 			isa = PBXGroup;
 			children = (
-				A647612521F9ED050015E4B2 /* Lib */,
+				A647614221FAB4040015E4B2 /* Lib */,
 				A647612021F9ED050015E4B2 /* Utils */,
 				A64760EE21F9ECAA0015E4B2 /* AppDelegate.h */,
 				A64760EF21F9ECAA0015E4B2 /* AppDelegate.m */,
 				A64760F121F9ECAA0015E4B2 /* ViewController.h */,
 				A64760F221F9ECAA0015E4B2 /* ViewController.m */,
+				A647613921F9EE000015E4B2 /* Congfig.h */,
+				A647613821F9EE000015E4B2 /* Congfig.m */,
+				A647613B21F9EE000015E4B2 /* JFOnlineVoiceRecoTool.h */,
+				A647613A21F9EE000015E4B2 /* JFOnlineVoiceRecoTool.m */,
+				A647613E21F9EE0B0015E4B2 /* JFTentcentHandler.h */,
+				A647613F21F9EE0B0015E4B2 /* JFTentcentHandler.m */,
 				A64760F421F9ECAA0015E4B2 /* Main.storyboard */,
 				A64760F721F9ECAB0015E4B2 /* Assets.xcassets */,
 				A64760F921F9ECAB0015E4B2 /* LaunchScreen.storyboard */,
@@ -157,17 +175,10 @@
 				A647612221F9ED050015E4B2 /* DemoUtil.h */,
 				A647612321F9ED050015E4B2 /* base64.m */,
 				A647612421F9ED050015E4B2 /* DemoUtil.m */,
+				A647614A21FB2F190015E4B2 /* NSString+Distance.h */,
+				A647614B21FB2F190015E4B2 /* NSString+Distance.m */,
 			);
 			path = Utils;
-			sourceTree = "<group>";
-		};
-		A647612521F9ED050015E4B2 /* Lib */ = {
-			isa = PBXGroup;
-			children = (
-				A647612621F9ED050015E4B2 /* libQCloudAAIClient.a */,
-				A647612721F9ED050015E4B2 /* QCloudAAIClient.h */,
-			);
-			path = Lib;
 			sourceTree = "<group>";
 		};
 		A647612C21F9ED430015E4B2 /* Frameworks */ = {
@@ -176,6 +187,23 @@
 				A647612D21F9ED430015E4B2 /* libc++.tbd */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A647614221FAB4040015E4B2 /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				A647614421FAB4340015E4B2 /* include */,
+				A647614321FAB4340015E4B2 /* libQCloudAAIClient.a */,
+			);
+			path = Lib;
+			sourceTree = "<group>";
+		};
+		A647614421FAB4340015E4B2 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				A647614521FAB4340015E4B2 /* QCloudAAIClient.h */,
+			);
+			path = include;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -308,10 +336,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A647613D21F9EE000015E4B2 /* JFOnlineVoiceRecoTool.m in Sources */,
+				A647614021F9EE0B0015E4B2 /* JFTentcentHandler.m in Sources */,
 				A647612821F9ED050015E4B2 /* base64.m in Sources */,
+				A647613C21F9EE000015E4B2 /* Congfig.m in Sources */,
 				A647612921F9ED050015E4B2 /* DemoUtil.m in Sources */,
 				A64760F321F9ECAA0015E4B2 /* ViewController.m in Sources */,
 				A64760FE21F9ECAB0015E4B2 /* main.m in Sources */,
+				A647614C21FB2F190015E4B2 /* NSString+Distance.m in Sources */,
 				A64760F021F9ECAA0015E4B2 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -485,6 +517,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = X2B3LVG7M7;
+				ENABLE_BITCODE = NO;
 				GCC_PREFIX_HEADER = "/Users/work/JFRepository/JFTTVoiceRec/JFTTVoiceRec/JFTTVoiceRec-Header.pch";
 				INFOPLIST_FILE = JFTTVoiceRec/Info.plist;
 				LD_QUOTE_LINKER_ARGUMENTS_FOR_COMPILER_DRIVER = NO;
@@ -496,6 +529,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/JFTTVoiceRec/Lib",
 				);
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hpf.JFTTVoiceRec;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -508,6 +542,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = X2B3LVG7M7;
+				ENABLE_BITCODE = NO;
 				GCC_PREFIX_HEADER = "/Users/work/JFRepository/JFTTVoiceRec/JFTTVoiceRec/JFTTVoiceRec-Header.pch";
 				INFOPLIST_FILE = JFTTVoiceRec/Info.plist;
 				LD_QUOTE_LINKER_ARGUMENTS_FOR_COMPILER_DRIVER = NO;
@@ -519,6 +554,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/JFTTVoiceRec/Lib",
 				);
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hpf.JFTTVoiceRec;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
