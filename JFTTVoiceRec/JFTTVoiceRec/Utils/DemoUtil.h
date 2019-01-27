@@ -17,4 +17,6 @@
 
 // 汉子转拼音
 + (NSString *)convertHZ2PY:(NSString *)string;
+
++(NSMutableAttributedString *)hightLightForString:(NSString *)text location:(NSRange)range;
 @end

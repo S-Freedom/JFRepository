@@ -31,6 +31,10 @@ static CGFloat weight = 50.0f;
     [super viewDidLoad];
     CGFloat percent = [@"cen ci xing cai" likePercent:@"qing chi xiang cai"];
     NSLog(@"%f", percent);
+    
+//    NSString *text = @"关关雎鸠，在河之洲，窈窕淑女，君子好逑，哈哈";
+//    self.desLabel.attributedText = [DemoUtil hightLightForString:text location:NSMakeRange(text.length - 2, 2)];
+//    NSLog(@"%@", self.desLabel.text);
 }
 
 - (IBAction)startBtnClick:(UIButton *)sender {
@@ -106,11 +110,15 @@ static CGFloat weight = 50.0f;
                     if(strongSelf.curIndex >= strongSelf.mArr.count) break;
                     
                     NSString *nextStr = [DemoUtil filterIllegalChar:strongSelf.mArr[strongSelf.curIndex]];
-                    NSInteger to = nextStr.length>2?1:0;
+                    NSInteger to = nextStr.length>2?2:1;
                     NSString *tip = nextStr.length > 0? [nextStr substringToIndex:to]:@"";
                     // 从下一条数据中增加1-2个字符到显示数组中，注意下次将这条数据从显示数组剔除
                     [strongSelf.showArr addObject:tip];
-                    strongSelf.desLabel.text = [strongSelf getResultText];
+                    
+                    // 富文本，将提示设为灰色
+                    NSString *text = [strongSelf getResultText];
+                    NSRange range = NSMakeRange(text.length - to, to);
+                    strongSelf.desLabel.attributedText = [DemoUtil hightLightForString:text location:range];
                     strongSelf.tipFlag = YES;
                     break;
                 }

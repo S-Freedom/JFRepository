@@ -11,6 +11,7 @@
 #import <commoncrypto/CommonDigest.h>
 #include <CommonCrypto/CommonHMAC.h>
 #include "base64.h"
+#import <UIKit/UIKit.h>
 
 @implementation DemoUtil
 
@@ -57,5 +58,14 @@
         return mStr;
     }
     return @"";
+}
+
++(NSMutableAttributedString *)hightLightForString:(NSString *)text location:(NSRange)range{
+    
+    NSAssert(text, @"text is not null");
+    NSMutableAttributedString *mAttr = [[NSMutableAttributedString alloc] initWithString:text];
+    [mAttr addAttribute:NSForegroundColorAttributeName value:[UIColor blackColor] range:NSMakeRange(0, range.location)];
+    [mAttr addAttribute:NSForegroundColorAttributeName value:[UIColor grayColor] range:NSMakeRange(range.location, range.length)];
+    return [mAttr copy];
 }
 @end
