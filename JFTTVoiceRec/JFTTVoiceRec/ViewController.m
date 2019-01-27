@@ -11,7 +11,7 @@
 #import "DemoUtil.h"
 #import "NSString+Distance.h"
 
-static CGFloat weight = 25.0f;
+static CGFloat weight = 50.0f;
 @interface ViewController ()
 
 @property (weak, nonatomic) IBOutlet UILabel *desLabel;
@@ -103,9 +103,9 @@ static CGFloat weight = 25.0f;
                 // 如果提示次数>=3，则增加提示文本
                 if(strongSelf.tipCount >= 3){
                     
-                    if(strongSelf.curIndex+1 >= strongSelf.mArr.count) break;
+                    if(strongSelf.curIndex >= strongSelf.mArr.count) break;
                     
-                    NSString *nextStr = [DemoUtil filterIllegalChar:strongSelf.mArr[strongSelf.curIndex+1]];
+                    NSString *nextStr = [DemoUtil filterIllegalChar:strongSelf.mArr[strongSelf.curIndex]];
                     NSInteger to = nextStr.length>2?1:0;
                     NSString *tip = nextStr.length > 0? [nextStr substringToIndex:to]:@"";
                     // 从下一条数据中增加1-2个字符到显示数组中，注意下次将这条数据从显示数组剔除
