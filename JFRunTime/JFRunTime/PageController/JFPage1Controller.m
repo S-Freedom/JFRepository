@@ -9,7 +9,7 @@
 #import "JFPage1Controller.h"
 #import <objc/runtime.h>
 #import "JFPerson.h"
-
+#import "JFGetController.h"
 @interface JFPage1Controller ()
 
 @property(nonatomic, strong) JFStudent *stu;
@@ -21,20 +21,28 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.view.backgroundColor = [UIColor redColor];
-    _stu = [JFStudent new];
-    _stu.name = @"name";
-    _stu.studyName = @"studyName";
-    _stu.age = 18;
-    
-    JFClassRoom *room = [JFClassRoom new];
-    room.studens = @[_stu];
-    
-//    [self copyStruct];
-//    [self addIvar];
-//    [self addProperty];
-    [self methodInfo];
+//    self.view.backgroundColor = [UIColor redColor];
+//    _stu = [JFStudent new];
+//    _stu.name = @"name";
+//    _stu.studyName = @"studyName";
+//    _stu.age = 18;
+//
+//    JFClassRoom *room = [JFClassRoom new];
+//    room.studens = @[_stu];
+//
+////    [self copyStruct];
+////    [self addIvar];
+////    [self addProperty];
+//    [self methodInfo];
 }
+
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    NSLog(@"JFPage1Controller  %@", [JFGetController getCurrentVC]);
+    UIViewController *vc = [JFGetController getCurrentVC];
+    NSArray *arr = vc.childViewControllers;
+    NSLog(@"%@", arr);
+}
+
 
 - (void)idStruct{
     NSLog(@"==========begin============");

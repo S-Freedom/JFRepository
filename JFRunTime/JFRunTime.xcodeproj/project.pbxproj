@@ -22,6 +22,8 @@
 		A696000C21F86BE500497938 /* JFPage3Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = A696000B21F86BE500497938 /* JFPage3Controller.m */; };
 		A696000F21F86BF000497938 /* JFPage4Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = A696000E21F86BF000497938 /* JFPage4Controller.m */; };
 		A696001221F86BF800497938 /* JFPage5Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = A696001121F86BF800497938 /* JFPage5Controller.m */; };
+		A6A80275220033B400D5C0BA /* JFGetController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6A80274220033B400D5C0BA /* JFGetController.m */; };
+		A6A80278220042D700D5C0BA /* JFView.m in Sources */ = {isa = PBXBuildFile; fileRef = A6A80277220042D700D5C0BA /* JFView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +73,10 @@
 		A696000E21F86BF000497938 /* JFPage4Controller.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JFPage4Controller.m; sourceTree = "<group>"; };
 		A696001021F86BF800497938 /* JFPage5Controller.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JFPage5Controller.h; sourceTree = "<group>"; };
 		A696001121F86BF800497938 /* JFPage5Controller.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JFPage5Controller.m; sourceTree = "<group>"; };
+		A6A80273220033B400D5C0BA /* JFGetController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFGetController.h; sourceTree = "<group>"; };
+		A6A80274220033B400D5C0BA /* JFGetController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFGetController.m; sourceTree = "<group>"; };
+		A6A80276220042D700D5C0BA /* JFView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JFView.h; sourceTree = "<group>"; };
+		A6A80277220042D700D5C0BA /* JFView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JFView.m; sourceTree = "<group>"; };
 		B2CE70C3221D7441F7FFD687 /* Pods-JFRunTime.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JFRunTime.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JFRunTime/Pods-JFRunTime.debug.xcconfig"; sourceTree = "<group>"; };
 		FD9795F013FFA08D69C3A252 /* Pods-JFRunTime.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JFRunTime.release.xcconfig"; path = "Pods/Target Support Files/Pods-JFRunTime/Pods-JFRunTime.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -180,6 +186,8 @@
 		A696001321F86BFC00497938 /* PageController */ = {
 			isa = PBXGroup;
 			children = (
+				A6A80273220033B400D5C0BA /* JFGetController.h */,
+				A6A80274220033B400D5C0BA /* JFGetController.m */,
 				A696000421F86BCF00497938 /* JFPage1Controller.h */,
 				A696000521F86BCF00497938 /* JFPage1Controller.m */,
 				A696000721F86BDA00497938 /* JFPage2Controller.h */,
@@ -190,6 +198,8 @@
 				A696000E21F86BF000497938 /* JFPage4Controller.m */,
 				A696001021F86BF800497938 /* JFPage5Controller.h */,
 				A696001121F86BF800497938 /* JFPage5Controller.m */,
+				A6A80276220042D700D5C0BA /* JFView.h */,
+				A6A80277220042D700D5C0BA /* JFView.m */,
 			);
 			path = PageController;
 			sourceTree = "<group>";
@@ -387,12 +397,14 @@
 			files = (
 				A67CA52121F850E300CACFAF /* JFPerson.m in Sources */,
 				A696000F21F86BF000497938 /* JFPage4Controller.m in Sources */,
+				A6A80278220042D700D5C0BA /* JFView.m in Sources */,
 				A696001221F86BF800497938 /* JFPage5Controller.m in Sources */,
 				A67CA4F221F8370800CACFAF /* ViewController.m in Sources */,
 				A696000C21F86BE500497938 /* JFPage3Controller.m in Sources */,
 				A696000921F86BDA00497938 /* JFPage2Controller.m in Sources */,
 				A67CA4FD21F8370900CACFAF /* main.m in Sources */,
 				A696000621F86BCF00497938 /* JFPage1Controller.m in Sources */,
+				A6A80275220033B400D5C0BA /* JFGetController.m in Sources */,
 				A67CA4EF21F8370800CACFAF /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

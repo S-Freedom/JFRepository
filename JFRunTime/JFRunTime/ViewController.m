@@ -28,6 +28,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    NSLog(@"viewDidLoad   %p", self);
     [self registerClass:[JFPage1Controller class] forControllerWithReuseIdentifier:NSStringFromClass([JFPage1Controller class])];
     [self registerClass:[JFPage2Controller class] forControllerWithReuseIdentifier:NSStringFromClass([JFPage2Controller class])];
     [self registerClass:[JFPage3Controller class] forControllerWithReuseIdentifier:NSStringFromClass([JFPage3Controller class])];

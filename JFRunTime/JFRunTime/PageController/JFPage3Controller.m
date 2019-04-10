@@ -7,6 +7,8 @@
 //
 
 #import "JFPage3Controller.h"
+#import "JFGetController.h"
+#import "JFView.h"
 
 @interface JFPage3Controller ()
 
@@ -17,8 +19,18 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor greenColor];
+    
+    JFView *v  = [[JFView alloc] initWithFrame:self.view.bounds];
+    v.backgroundColor = [UIColor grayColor];
+    [self.view addSubview:v];
 }
 
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    NSLog(@"JFPage3Controller  %@", [JFGetController getCurrentVC]);
+    UIViewController *vc = [JFGetController getCurrentVC];
+    NSArray *arr = vc.childViewControllers;
+    NSLog(@"%@", arr);
+}
 /*
 #pragma mark - Navigation
 
