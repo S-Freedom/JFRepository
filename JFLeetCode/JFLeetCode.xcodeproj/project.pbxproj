@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		A6243E59225DF31D005F498C /* JFLeetCode1.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6243E58225DF31D005F498C /* JFLeetCode1.swift */; };
+		A6243E5B225ED6AC005F498C /* JFLeetCode3.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6243E5A225ED6AC005F498C /* JFLeetCode3.swift */; };
+		A6243E5D225F1D35005F498C /* JFLeetCode344.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6243E5C225F1D35005F498C /* JFLeetCode344.swift */; };
 		A6C5DA17225DF12500A45512 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C5DA16225DF12500A45512 /* main.swift */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +27,8 @@
 
 /* Begin PBXFileReference section */
 		A6243E58225DF31D005F498C /* JFLeetCode1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JFLeetCode1.swift; sourceTree = "<group>"; };
+		A6243E5A225ED6AC005F498C /* JFLeetCode3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JFLeetCode3.swift; sourceTree = "<group>"; };
+		A6243E5C225F1D35005F498C /* JFLeetCode344.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JFLeetCode344.swift; sourceTree = "<group>"; };
 		A6C5DA13225DF12500A45512 /* JFLeetCode */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = JFLeetCode; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6C5DA16225DF12500A45512 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -60,7 +64,9 @@
 			isa = PBXGroup;
 			children = (
 				A6C5DA16225DF12500A45512 /* main.swift */,
+				A6243E5C225F1D35005F498C /* JFLeetCode344.swift */,
 				A6243E58225DF31D005F498C /* JFLeetCode1.swift */,
+				A6243E5A225ED6AC005F498C /* JFLeetCode3.swift */,
 			);
 			path = JFLeetCode;
 			sourceTree = "<group>";
@@ -122,7 +128,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6243E5B225ED6AC005F498C /* JFLeetCode3.swift in Sources */,
 				A6243E59225DF31D005F498C /* JFLeetCode1.swift in Sources */,
+				A6243E5D225F1D35005F498C /* JFLeetCode344.swift in Sources */,
 				A6C5DA17225DF12500A45512 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

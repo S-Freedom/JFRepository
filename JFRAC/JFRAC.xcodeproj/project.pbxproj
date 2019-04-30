@@ -1,0 +1,642 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A60EACA7227834BC007DA99C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A60EACA6227834BC007DA99C /* AppDelegate.m */; };
+		A60EACAA227834BC007DA99C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A60EACA9227834BC007DA99C /* ViewController.m */; };
+		A60EACAD227834BC007DA99C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A60EACAB227834BC007DA99C /* Main.storyboard */; };
+		A60EACAF227834BE007DA99C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A60EACAE227834BE007DA99C /* Assets.xcassets */; };
+		A60EACB2227834BE007DA99C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A60EACB0227834BE007DA99C /* LaunchScreen.storyboard */; };
+		A60EACB5227834BE007DA99C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A60EACB4227834BE007DA99C /* main.m */; };
+		A60EACBF227834BE007DA99C /* JFRACTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A60EACBE227834BE007DA99C /* JFRACTests.m */; };
+		A60EACCA227834BE007DA99C /* JFRACUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A60EACC9227834BE007DA99C /* JFRACUITests.m */; };
+		A6C653C8227839B900A44401 /* JFCustomView.m in Sources */ = {isa = PBXBuildFile; fileRef = A6C653C6227839B900A44401 /* JFCustomView.m */; };
+		EC779990BD7062D0BA78EAE3 /* libPods-JFRAC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0121CE828EC3F94915D5C928 /* libPods-JFRAC.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A60EACBB227834BE007DA99C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A60EAC9A227834BC007DA99C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A60EACA1227834BC007DA99C;
+			remoteInfo = JFRAC;
+		};
+		A60EACC6227834BE007DA99C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A60EAC9A227834BC007DA99C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A60EACA1227834BC007DA99C;
+			remoteInfo = JFRAC;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0121CE828EC3F94915D5C928 /* libPods-JFRAC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JFRAC.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E05BCD7A89C07436C3D24BA /* Pods-JFRAC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JFRAC.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JFRAC/Pods-JFRAC.debug.xcconfig"; sourceTree = "<group>"; };
+		9F0943F36BF80290FA44EAA2 /* Pods-JFRAC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JFRAC.release.xcconfig"; path = "Pods/Target Support Files/Pods-JFRAC/Pods-JFRAC.release.xcconfig"; sourceTree = "<group>"; };
+		A60EACA2227834BC007DA99C /* JFRAC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JFRAC.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A60EACA5227834BC007DA99C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A60EACA6227834BC007DA99C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A60EACA8227834BC007DA99C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		A60EACA9227834BC007DA99C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		A60EACAC227834BC007DA99C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A60EACAE227834BE007DA99C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A60EACB1227834BE007DA99C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A60EACB3227834BE007DA99C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A60EACB4227834BE007DA99C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A60EACBA227834BE007DA99C /* JFRACTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JFRACTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A60EACBE227834BE007DA99C /* JFRACTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JFRACTests.m; sourceTree = "<group>"; };
+		A60EACC0227834BE007DA99C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A60EACC5227834BE007DA99C /* JFRACUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JFRACUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A60EACC9227834BE007DA99C /* JFRACUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JFRACUITests.m; sourceTree = "<group>"; };
+		A60EACCB227834BE007DA99C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A6C653C6227839B900A44401 /* JFCustomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFCustomView.m; sourceTree = "<group>"; };
+		A6C653C7227839B900A44401 /* JFCustomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFCustomView.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A60EAC9F227834BC007DA99C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC779990BD7062D0BA78EAE3 /* libPods-JFRAC.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A60EACB7227834BE007DA99C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A60EACC2227834BE007DA99C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6461D62DC4F50F6FF23486F3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0121CE828EC3F94915D5C928 /* libPods-JFRAC.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A60EAC99227834BC007DA99C = {
+			isa = PBXGroup;
+			children = (
+				A60EACA4227834BC007DA99C /* JFRAC */,
+				A60EACBD227834BE007DA99C /* JFRACTests */,
+				A60EACC8227834BE007DA99C /* JFRACUITests */,
+				A60EACA3227834BC007DA99C /* Products */,
+				CC6D40633E49204C2D7769E4 /* Pods */,
+				6461D62DC4F50F6FF23486F3 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A60EACA3227834BC007DA99C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A60EACA2227834BC007DA99C /* JFRAC.app */,
+				A60EACBA227834BE007DA99C /* JFRACTests.xctest */,
+				A60EACC5227834BE007DA99C /* JFRACUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A60EACA4227834BC007DA99C /* JFRAC */ = {
+			isa = PBXGroup;
+			children = (
+				A6C653C7227839B900A44401 /* JFCustomView.h */,
+				A6C653C6227839B900A44401 /* JFCustomView.m */,
+				A60EACA5227834BC007DA99C /* AppDelegate.h */,
+				A60EACA6227834BC007DA99C /* AppDelegate.m */,
+				A60EACA8227834BC007DA99C /* ViewController.h */,
+				A60EACA9227834BC007DA99C /* ViewController.m */,
+				A60EACAB227834BC007DA99C /* Main.storyboard */,
+				A60EACAE227834BE007DA99C /* Assets.xcassets */,
+				A60EACB0227834BE007DA99C /* LaunchScreen.storyboard */,
+				A60EACB3227834BE007DA99C /* Info.plist */,
+				A60EACB4227834BE007DA99C /* main.m */,
+			);
+			path = JFRAC;
+			sourceTree = "<group>";
+		};
+		A60EACBD227834BE007DA99C /* JFRACTests */ = {
+			isa = PBXGroup;
+			children = (
+				A60EACBE227834BE007DA99C /* JFRACTests.m */,
+				A60EACC0227834BE007DA99C /* Info.plist */,
+			);
+			path = JFRACTests;
+			sourceTree = "<group>";
+		};
+		A60EACC8227834BE007DA99C /* JFRACUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A60EACC9227834BE007DA99C /* JFRACUITests.m */,
+				A60EACCB227834BE007DA99C /* Info.plist */,
+			);
+			path = JFRACUITests;
+			sourceTree = "<group>";
+		};
+		CC6D40633E49204C2D7769E4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4E05BCD7A89C07436C3D24BA /* Pods-JFRAC.debug.xcconfig */,
+				9F0943F36BF80290FA44EAA2 /* Pods-JFRAC.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A60EACA1227834BC007DA99C /* JFRAC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A60EACCE227834BE007DA99C /* Build configuration list for PBXNativeTarget "JFRAC" */;
+			buildPhases = (
+				745326DEF155A7BD107FFC35 /* [CP] Check Pods Manifest.lock */,
+				A60EAC9E227834BC007DA99C /* Sources */,
+				A60EAC9F227834BC007DA99C /* Frameworks */,
+				A60EACA0227834BC007DA99C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JFRAC;
+			productName = JFRAC;
+			productReference = A60EACA2227834BC007DA99C /* JFRAC.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A60EACB9227834BE007DA99C /* JFRACTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A60EACD1227834BE007DA99C /* Build configuration list for PBXNativeTarget "JFRACTests" */;
+			buildPhases = (
+				A60EACB6227834BE007DA99C /* Sources */,
+				A60EACB7227834BE007DA99C /* Frameworks */,
+				A60EACB8227834BE007DA99C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A60EACBC227834BE007DA99C /* PBXTargetDependency */,
+			);
+			name = JFRACTests;
+			productName = JFRACTests;
+			productReference = A60EACBA227834BE007DA99C /* JFRACTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A60EACC4227834BE007DA99C /* JFRACUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A60EACD4227834BE007DA99C /* Build configuration list for PBXNativeTarget "JFRACUITests" */;
+			buildPhases = (
+				A60EACC1227834BE007DA99C /* Sources */,
+				A60EACC2227834BE007DA99C /* Frameworks */,
+				A60EACC3227834BE007DA99C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A60EACC7227834BE007DA99C /* PBXTargetDependency */,
+			);
+			name = JFRACUITests;
+			productName = JFRACUITests;
+			productReference = A60EACC5227834BE007DA99C /* JFRACUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A60EAC9A227834BC007DA99C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = com.hpf;
+				TargetAttributes = {
+					A60EACA1227834BC007DA99C = {
+						CreatedOnToolsVersion = 10.2;
+					};
+					A60EACB9227834BE007DA99C = {
+						CreatedOnToolsVersion = 10.2;
+						TestTargetID = A60EACA1227834BC007DA99C;
+					};
+					A60EACC4227834BE007DA99C = {
+						CreatedOnToolsVersion = 10.2;
+						TestTargetID = A60EACA1227834BC007DA99C;
+					};
+				};
+			};
+			buildConfigurationList = A60EAC9D227834BC007DA99C /* Build configuration list for PBXProject "JFRAC" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A60EAC99227834BC007DA99C;
+			productRefGroup = A60EACA3227834BC007DA99C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A60EACA1227834BC007DA99C /* JFRAC */,
+				A60EACB9227834BE007DA99C /* JFRACTests */,
+				A60EACC4227834BE007DA99C /* JFRACUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A60EACA0227834BC007DA99C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A60EACB2227834BE007DA99C /* LaunchScreen.storyboard in Resources */,
+				A60EACAF227834BE007DA99C /* Assets.xcassets in Resources */,
+				A60EACAD227834BC007DA99C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A60EACB8227834BE007DA99C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A60EACC3227834BE007DA99C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		745326DEF155A7BD107FFC35 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JFRAC-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A60EAC9E227834BC007DA99C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A60EACAA227834BC007DA99C /* ViewController.m in Sources */,
+				A60EACB5227834BE007DA99C /* main.m in Sources */,
+				A60EACA7227834BC007DA99C /* AppDelegate.m in Sources */,
+				A6C653C8227839B900A44401 /* JFCustomView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A60EACB6227834BE007DA99C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A60EACBF227834BE007DA99C /* JFRACTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A60EACC1227834BE007DA99C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A60EACCA227834BE007DA99C /* JFRACUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A60EACBC227834BE007DA99C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A60EACA1227834BC007DA99C /* JFRAC */;
+			targetProxy = A60EACBB227834BE007DA99C /* PBXContainerItemProxy */;
+		};
+		A60EACC7227834BE007DA99C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A60EACA1227834BC007DA99C /* JFRAC */;
+			targetProxy = A60EACC6227834BE007DA99C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A60EACAB227834BC007DA99C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A60EACAC227834BC007DA99C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A60EACB0227834BE007DA99C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A60EACB1227834BE007DA99C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A60EACCC227834BE007DA99C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		A60EACCD227834BE007DA99C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A60EACCF227834BE007DA99C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4E05BCD7A89C07436C3D24BA /* Pods-JFRAC.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X2B3LVG7M7;
+				INFOPLIST_FILE = JFRAC/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hpf.JFRAC;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A60EACD0227834BE007DA99C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9F0943F36BF80290FA44EAA2 /* Pods-JFRAC.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X2B3LVG7M7;
+				INFOPLIST_FILE = JFRAC/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hpf.JFRAC;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A60EACD2227834BE007DA99C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X2B3LVG7M7;
+				INFOPLIST_FILE = JFRACTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hpf.JFRACTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JFRAC.app/JFRAC";
+			};
+			name = Debug;
+		};
+		A60EACD3227834BE007DA99C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X2B3LVG7M7;
+				INFOPLIST_FILE = JFRACTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hpf.JFRACTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JFRAC.app/JFRAC";
+			};
+			name = Release;
+		};
+		A60EACD5227834BE007DA99C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X2B3LVG7M7;
+				INFOPLIST_FILE = JFRACUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hpf.JFRACUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = JFRAC;
+			};
+			name = Debug;
+		};
+		A60EACD6227834BE007DA99C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X2B3LVG7M7;
+				INFOPLIST_FILE = JFRACUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hpf.JFRACUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = JFRAC;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A60EAC9D227834BC007DA99C /* Build configuration list for PBXProject "JFRAC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A60EACCC227834BE007DA99C /* Debug */,
+				A60EACCD227834BE007DA99C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A60EACCE227834BE007DA99C /* Build configuration list for PBXNativeTarget "JFRAC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A60EACCF227834BE007DA99C /* Debug */,
+				A60EACD0227834BE007DA99C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A60EACD1227834BE007DA99C /* Build configuration list for PBXNativeTarget "JFRACTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A60EACD2227834BE007DA99C /* Debug */,
+				A60EACD3227834BE007DA99C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A60EACD4227834BE007DA99C /* Build configuration list for PBXNativeTarget "JFRACUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A60EACD5227834BE007DA99C /* Debug */,
+				A60EACD6227834BE007DA99C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A60EAC9A227834BC007DA99C /* Project object */;
+}
