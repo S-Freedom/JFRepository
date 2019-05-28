@@ -1,0 +1,16 @@
+PODS:
+  - JFCommonTool (0.1.0)
+
+DEPENDENCIES:
+  - JFCommonTool (from `~/.cocoapods/repos/JFCommonTool`)
+
+EXTERNAL SOURCES:
+  JFCommonTool:
+    :path: "~/.cocoapods/repos/JFCommonTool"
+
+SPEC CHECKSUMS:
+  JFCommonTool: adb64a1cfb30606ee799fb6b1fb19409bc512370
+
+PODFILE CHECKSUM: ad837a931b72ab5fde5557e0b384806082e8e90e
+
+COCOAPODS: 1.7.0

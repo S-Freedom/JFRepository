@@ -1,0 +1,10 @@
+# Uncomment the next line to define a global platform for your project
+platform :ios, '9.0'
+
+
+target 'JFCommonDemo' do
+#  pod 'JFCommonTool' '~> 0.5.0'  #:path => '~/.cocoapods/repos/JFCommonTool'      #指定路径
+#    pod 'JFCommonTool', :podspec => '~/.cocoapods/repos/JFCommonTool/JFCommonTool'  #指定podspec文件
+
+  pod 'CTMediator'
+end

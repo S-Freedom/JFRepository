@@ -1,0 +1,39 @@
+{
+  "name": "JFCommonTool",
+  "version": "0.4.0",
+  "summary": "add AFNetWorking and SDXX  YYXX support.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/S-Freedom/JFPrivateRepo",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "445412679@qq.com": "445412679@qq.com"
+  },
+  "source": {
+    "git": "https://github.com/S-Freedom/JFPrivateRepo.git",
+    "tag": "0.4.0"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": "JFCommonTool/Classes/**/*",
+  "dependencies": {
+    "AFNetworking": [
+
+    ],
+    "YYModel": [
+
+    ],
+    "Masonry": [
+
+    ],
+    "MJRefresh": [
+
+    ],
+    "SDWebImage": [
+
+    ]
+  }
+}
