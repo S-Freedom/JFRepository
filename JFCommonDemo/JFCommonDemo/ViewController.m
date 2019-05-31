@@ -17,6 +17,7 @@
 #import "CTMediator+JFBModel.h"
 #import "CTMediator+JFCModel.h"
 
+#import <UserNotifications/UserNotifications.h>
 @interface ViewController ()
 
 @property (nonatomic, strong) UIButton *goABtn;
@@ -61,6 +62,27 @@
 //    NSString *key = dic[nil];
 //
 //    [self testNetwork];
+}
+
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    
+    UNUserNotificationCenter *center = [UNUserNotificationCenter currentNotificationCenter];
+    UNMutableNotificationContent *content = [[UNMutableNotificationContent alloc] init];
+    content.title = @"titletitletitle";
+    content.body = @"bodybodybody";
+    content.sound = [UNNotificationSound defaultSound];
+    
+    // 在 设定时间 后推送本地推送
+    UNTimeIntervalNotificationTrigger* trigger = [UNTimeIntervalNotificationTrigger
+                                                  triggerWithTimeInterval:5 repeats:NO];
+    
+    UNNotificationRequest* request = [UNNotificationRequest requestWithIdentifier:@"FiveSecond"
+                                                                          content:content trigger:trigger];
+    
+    //添加推送成功后的处理！
+    [center addNotificationRequest:request withCompletionHandler:^(NSError * _Nullable error) {
+        NSLog(@"%@", error);
+    }];
 }
 
 - (void)btnClick:(UIButton *)sender{

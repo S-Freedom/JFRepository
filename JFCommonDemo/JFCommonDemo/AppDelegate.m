@@ -7,8 +7,8 @@
 //
 
 #import "AppDelegate.h"
-
-@interface AppDelegate ()
+#import <UserNotifications/UserNotifications.h>
+@interface AppDelegate () <UNUserNotificationCenterDelegate>
 
 @end
 
@@ -17,9 +17,44 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    if([[UIDevice currentDevice].systemVersion floatValue] > 10.0){
+        
+        UNUserNotificationCenter *center = [UNUserNotificationCenter currentNotificationCenter];
+        center.delegate = self;
+        [center requestAuthorizationWithOptions:(UNAuthorizationOptionAlert + UNAuthorizationOptionBadge + UNAuthorizationOptionSound) completionHandler:^(BOOL granted, NSError * _Nullable error) {
+           
+            if(granted){
+                NSLog(@"授权成功");
+            }else{
+                NSLog(@"%@", error);
+            }
+        }];
+    }
     return YES;
 }
 
+- (void)userNotificationCenter:(UNUserNotificationCenter *)center openSettingsForNotification:(UNNotification *)notification{
+    
+    NSLog(@"%s", __func__);
+    
+}
+
+- (void)userNotificationCenter:(UNUserNotificationCenter *)center willPresentNotification:(UNNotification *)notification withCompletionHandler:(void (^)(UNNotificationPresentationOptions))completionHandler{
+    
+    NSLog(@"%s", __func__);
+    completionHandler(UNNotificationPresentationOptionSound);
+}
+
+- (void)userNotificationCenter:(UNUserNotificationCenter *)center didReceiveNotificationResponse:(UNNotificationResponse *)response withCompletionHandler:(void (^)(void))completionHandler{
+    
+    NSLog(@"%s", __func__);
+    
+    UNNotificationContent *content = response.notification.request.content;
+    UIAlertView *alert = [[UIAlertView alloc]initWithTitle:content.title message:content.body delegate:self cancelButtonTitle:@"cancel" otherButtonTitles:@"ok", nil];
+    [alert show];
+    completionHandler();
+}
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
