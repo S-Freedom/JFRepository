@@ -1,0 +1,614 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A66AA27E22A91284002B5718 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A66AA27D22A91284002B5718 /* AppDelegate.m */; };
+		A66AA28122A91284002B5718 /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = A66AA28022A91284002B5718 /* ViewController.mm */; };
+		A66AA28422A91284002B5718 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A66AA28222A91284002B5718 /* Main.storyboard */; };
+		A66AA28622A91285002B5718 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A66AA28522A91285002B5718 /* Assets.xcassets */; };
+		A66AA28922A91285002B5718 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A66AA28722A91285002B5718 /* LaunchScreen.storyboard */; };
+		A66AA28C22A91285002B5718 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A66AA28B22A91285002B5718 /* main.m */; };
+		A66AA29622A91285002B5718 /* JFOpenCV2StudyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A66AA29522A91285002B5718 /* JFOpenCV2StudyTests.m */; };
+		A66AA2A122A91285002B5718 /* JFOpenCV2StudyUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A66AA2A022A91285002B5718 /* JFOpenCV2StudyUITests.m */; };
+		A66AA2B122A912A3002B5718 /* JFImageUtils.mm in Sources */ = {isa = PBXBuildFile; fileRef = A66AA2AF22A912A3002B5718 /* JFImageUtils.mm */; };
+		A66AA2B422A914EA002B5718 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A66AA2B322A914EA002B5718 /* opencv2.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A66AA29222A91285002B5718 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A66AA27122A91284002B5718 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A66AA27822A91284002B5718;
+			remoteInfo = JFOpenCV2Study;
+		};
+		A66AA29D22A91285002B5718 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A66AA27122A91284002B5718 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A66AA27822A91284002B5718;
+			remoteInfo = JFOpenCV2Study;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A66AA27922A91284002B5718 /* JFOpenCV2Study.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JFOpenCV2Study.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A66AA27C22A91284002B5718 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A66AA27D22A91284002B5718 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A66AA27F22A91284002B5718 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		A66AA28022A91284002B5718 /* ViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ViewController.mm; sourceTree = "<group>"; };
+		A66AA28322A91284002B5718 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A66AA28522A91285002B5718 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A66AA28822A91285002B5718 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A66AA28A22A91285002B5718 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A66AA28B22A91285002B5718 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A66AA29122A91285002B5718 /* JFOpenCV2StudyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JFOpenCV2StudyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A66AA29522A91285002B5718 /* JFOpenCV2StudyTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JFOpenCV2StudyTests.m; sourceTree = "<group>"; };
+		A66AA29722A91285002B5718 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A66AA29C22A91285002B5718 /* JFOpenCV2StudyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JFOpenCV2StudyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A66AA2A022A91285002B5718 /* JFOpenCV2StudyUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JFOpenCV2StudyUITests.m; sourceTree = "<group>"; };
+		A66AA2A222A91285002B5718 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A66AA2AF22A912A3002B5718 /* JFImageUtils.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = JFImageUtils.mm; sourceTree = "<group>"; };
+		A66AA2B022A912A3002B5718 /* JFImageUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFImageUtils.h; sourceTree = "<group>"; };
+		A66AA2B322A914EA002B5718 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = opencv2.framework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A66AA27622A91284002B5718 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A66AA2B422A914EA002B5718 /* opencv2.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A66AA28E22A91285002B5718 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A66AA29922A91285002B5718 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A66AA27022A91284002B5718 = {
+			isa = PBXGroup;
+			children = (
+				A66AA27B22A91284002B5718 /* JFOpenCV2Study */,
+				A66AA29422A91285002B5718 /* JFOpenCV2StudyTests */,
+				A66AA29F22A91285002B5718 /* JFOpenCV2StudyUITests */,
+				A66AA27A22A91284002B5718 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A66AA27A22A91284002B5718 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A66AA27922A91284002B5718 /* JFOpenCV2Study.app */,
+				A66AA29122A91285002B5718 /* JFOpenCV2StudyTests.xctest */,
+				A66AA29C22A91285002B5718 /* JFOpenCV2StudyUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A66AA27B22A91284002B5718 /* JFOpenCV2Study */ = {
+			isa = PBXGroup;
+			children = (
+				A66AA2B222A914A6002B5718 /* opencv2 */,
+				A66AA2AE22A91290002B5718 /* Utils */,
+				A66AA27C22A91284002B5718 /* AppDelegate.h */,
+				A66AA27D22A91284002B5718 /* AppDelegate.m */,
+				A66AA27F22A91284002B5718 /* ViewController.h */,
+				A66AA28022A91284002B5718 /* ViewController.mm */,
+				A66AA28222A91284002B5718 /* Main.storyboard */,
+				A66AA28522A91285002B5718 /* Assets.xcassets */,
+				A66AA28722A91285002B5718 /* LaunchScreen.storyboard */,
+				A66AA28A22A91285002B5718 /* Info.plist */,
+				A66AA28B22A91285002B5718 /* main.m */,
+			);
+			path = JFOpenCV2Study;
+			sourceTree = "<group>";
+		};
+		A66AA29422A91285002B5718 /* JFOpenCV2StudyTests */ = {
+			isa = PBXGroup;
+			children = (
+				A66AA29522A91285002B5718 /* JFOpenCV2StudyTests.m */,
+				A66AA29722A91285002B5718 /* Info.plist */,
+			);
+			path = JFOpenCV2StudyTests;
+			sourceTree = "<group>";
+		};
+		A66AA29F22A91285002B5718 /* JFOpenCV2StudyUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A66AA2A022A91285002B5718 /* JFOpenCV2StudyUITests.m */,
+				A66AA2A222A91285002B5718 /* Info.plist */,
+			);
+			path = JFOpenCV2StudyUITests;
+			sourceTree = "<group>";
+		};
+		A66AA2AE22A91290002B5718 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				A66AA2B022A912A3002B5718 /* JFImageUtils.h */,
+				A66AA2AF22A912A3002B5718 /* JFImageUtils.mm */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		A66AA2B222A914A6002B5718 /* opencv2 */ = {
+			isa = PBXGroup;
+			children = (
+				A66AA2B322A914EA002B5718 /* opencv2.framework */,
+			);
+			path = opencv2;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A66AA27822A91284002B5718 /* JFOpenCV2Study */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A66AA2A522A91285002B5718 /* Build configuration list for PBXNativeTarget "JFOpenCV2Study" */;
+			buildPhases = (
+				A66AA27522A91284002B5718 /* Sources */,
+				A66AA27622A91284002B5718 /* Frameworks */,
+				A66AA27722A91284002B5718 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JFOpenCV2Study;
+			productName = JFOpenCV2Study;
+			productReference = A66AA27922A91284002B5718 /* JFOpenCV2Study.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A66AA29022A91285002B5718 /* JFOpenCV2StudyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A66AA2A822A91285002B5718 /* Build configuration list for PBXNativeTarget "JFOpenCV2StudyTests" */;
+			buildPhases = (
+				A66AA28D22A91285002B5718 /* Sources */,
+				A66AA28E22A91285002B5718 /* Frameworks */,
+				A66AA28F22A91285002B5718 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A66AA29322A91285002B5718 /* PBXTargetDependency */,
+			);
+			name = JFOpenCV2StudyTests;
+			productName = JFOpenCV2StudyTests;
+			productReference = A66AA29122A91285002B5718 /* JFOpenCV2StudyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A66AA29B22A91285002B5718 /* JFOpenCV2StudyUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A66AA2AB22A91285002B5718 /* Build configuration list for PBXNativeTarget "JFOpenCV2StudyUITests" */;
+			buildPhases = (
+				A66AA29822A91285002B5718 /* Sources */,
+				A66AA29922A91285002B5718 /* Frameworks */,
+				A66AA29A22A91285002B5718 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A66AA29E22A91285002B5718 /* PBXTargetDependency */,
+			);
+			name = JFOpenCV2StudyUITests;
+			productName = JFOpenCV2StudyUITests;
+			productReference = A66AA29C22A91285002B5718 /* JFOpenCV2StudyUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A66AA27122A91284002B5718 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = com.hpf;
+				TargetAttributes = {
+					A66AA27822A91284002B5718 = {
+						CreatedOnToolsVersion = 10.2;
+					};
+					A66AA29022A91285002B5718 = {
+						CreatedOnToolsVersion = 10.2;
+						TestTargetID = A66AA27822A91284002B5718;
+					};
+					A66AA29B22A91285002B5718 = {
+						CreatedOnToolsVersion = 10.2;
+						TestTargetID = A66AA27822A91284002B5718;
+					};
+				};
+			};
+			buildConfigurationList = A66AA27422A91284002B5718 /* Build configuration list for PBXProject "JFOpenCV2Study" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A66AA27022A91284002B5718;
+			productRefGroup = A66AA27A22A91284002B5718 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A66AA27822A91284002B5718 /* JFOpenCV2Study */,
+				A66AA29022A91285002B5718 /* JFOpenCV2StudyTests */,
+				A66AA29B22A91285002B5718 /* JFOpenCV2StudyUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A66AA27722A91284002B5718 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A66AA28922A91285002B5718 /* LaunchScreen.storyboard in Resources */,
+				A66AA28622A91285002B5718 /* Assets.xcassets in Resources */,
+				A66AA28422A91284002B5718 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A66AA28F22A91285002B5718 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A66AA29A22A91285002B5718 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A66AA27522A91284002B5718 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A66AA28122A91284002B5718 /* ViewController.mm in Sources */,
+				A66AA28C22A91285002B5718 /* main.m in Sources */,
+				A66AA27E22A91284002B5718 /* AppDelegate.m in Sources */,
+				A66AA2B122A912A3002B5718 /* JFImageUtils.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A66AA28D22A91285002B5718 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A66AA29622A91285002B5718 /* JFOpenCV2StudyTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A66AA29822A91285002B5718 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A66AA2A122A91285002B5718 /* JFOpenCV2StudyUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A66AA29322A91285002B5718 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A66AA27822A91284002B5718 /* JFOpenCV2Study */;
+			targetProxy = A66AA29222A91285002B5718 /* PBXContainerItemProxy */;
+		};
+		A66AA29E22A91285002B5718 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A66AA27822A91284002B5718 /* JFOpenCV2Study */;
+			targetProxy = A66AA29D22A91285002B5718 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A66AA28222A91284002B5718 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A66AA28322A91284002B5718 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A66AA28722A91285002B5718 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A66AA28822A91285002B5718 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A66AA2A322A91285002B5718 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		A66AA2A422A91285002B5718 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A66AA2A622A91285002B5718 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X2B3LVG7M7;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/JFOpenCV2Study/opencv2",
+				);
+				INFOPLIST_FILE = JFOpenCV2Study/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hpf.JFOpenCV2Study;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A66AA2A722A91285002B5718 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X2B3LVG7M7;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/JFOpenCV2Study/opencv2",
+				);
+				INFOPLIST_FILE = JFOpenCV2Study/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hpf.JFOpenCV2Study;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A66AA2A922A91285002B5718 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = JFOpenCV2StudyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hpf.JFOpenCV2StudyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JFOpenCV2Study.app/JFOpenCV2Study";
+			};
+			name = Debug;
+		};
+		A66AA2AA22A91285002B5718 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = JFOpenCV2StudyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hpf.JFOpenCV2StudyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JFOpenCV2Study.app/JFOpenCV2Study";
+			};
+			name = Release;
+		};
+		A66AA2AC22A91285002B5718 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = JFOpenCV2StudyUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hpf.JFOpenCV2StudyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = JFOpenCV2Study;
+			};
+			name = Debug;
+		};
+		A66AA2AD22A91285002B5718 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = JFOpenCV2StudyUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hpf.JFOpenCV2StudyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = JFOpenCV2Study;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A66AA27422A91284002B5718 /* Build configuration list for PBXProject "JFOpenCV2Study" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A66AA2A322A91285002B5718 /* Debug */,
+				A66AA2A422A91285002B5718 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A66AA2A522A91285002B5718 /* Build configuration list for PBXNativeTarget "JFOpenCV2Study" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A66AA2A622A91285002B5718 /* Debug */,
+				A66AA2A722A91285002B5718 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A66AA2A822A91285002B5718 /* Build configuration list for PBXNativeTarget "JFOpenCV2StudyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A66AA2A922A91285002B5718 /* Debug */,
+				A66AA2AA22A91285002B5718 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A66AA2AB22A91285002B5718 /* Build configuration list for PBXNativeTarget "JFOpenCV2StudyUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A66AA2AC22A91285002B5718 /* Debug */,
+				A66AA2AD22A91285002B5718 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A66AA27122A91284002B5718 /* Project object */;
+}
