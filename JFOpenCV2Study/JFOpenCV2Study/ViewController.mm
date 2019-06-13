@@ -20,7 +20,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+     
     self.imageView.image = [UIImage imageNamed:@"Test1.jpg"];
 }
 
