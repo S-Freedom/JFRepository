@@ -16,7 +16,6 @@
 		A66AA29622A91285002B5718 /* JFOpenCV2StudyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A66AA29522A91285002B5718 /* JFOpenCV2StudyTests.m */; };
 		A66AA2A122A91285002B5718 /* JFOpenCV2StudyUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A66AA2A022A91285002B5718 /* JFOpenCV2StudyUITests.m */; };
 		A66AA2B122A912A3002B5718 /* JFImageUtils.mm in Sources */ = {isa = PBXBuildFile; fileRef = A66AA2AF22A912A3002B5718 /* JFImageUtils.mm */; };
-		A66AA2B422A914EA002B5718 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A66AA2B322A914EA002B5718 /* opencv2.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,7 +54,6 @@
 		A66AA2A222A91285002B5718 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A66AA2AF22A912A3002B5718 /* JFImageUtils.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = JFImageUtils.mm; sourceTree = "<group>"; };
 		A66AA2B022A912A3002B5718 /* JFImageUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFImageUtils.h; sourceTree = "<group>"; };
-		A66AA2B322A914EA002B5718 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = opencv2.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,7 +61,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A66AA2B422A914EA002B5718 /* opencv2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -107,7 +104,6 @@
 		A66AA27B22A91284002B5718 /* JFOpenCV2Study */ = {
 			isa = PBXGroup;
 			children = (
-				A66AA2B222A914A6002B5718 /* opencv2 */,
 				A66AA2AE22A91290002B5718 /* Utils */,
 				A66AA27C22A91284002B5718 /* AppDelegate.h */,
 				A66AA27D22A91284002B5718 /* AppDelegate.m */,
@@ -147,14 +143,6 @@
 				A66AA2AF22A912A3002B5718 /* JFImageUtils.mm */,
 			);
 			path = Utils;
-			sourceTree = "<group>";
-		};
-		A66AA2B222A914A6002B5718 /* opencv2 */ = {
-			isa = PBXGroup;
-			children = (
-				A66AA2B322A914EA002B5718 /* opencv2.framework */,
-			);
-			path = opencv2;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
