@@ -1,16 +1,22 @@
 PODS:
   - CTMediator (25)
+  - SDWebImage (5.0.6):
+    - SDWebImage/Core (= 5.0.6)
+  - SDWebImage/Core (5.0.6)
 
 DEPENDENCIES:
   - CTMediator
+  - SDWebImage
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - CTMediator
+    - SDWebImage
 
 SPEC CHECKSUMS:
   CTMediator: 830c1fc204b3a6abf2a059510c7380f56343da0f
+  SDWebImage: 920f1a2ff1ca8296ad34f6e0510a1ef1d70ac965
 
-PODFILE CHECKSUM: 0c46fb0ef21412e664b30bd50c5ee9aa7763f7e3
+PODFILE CHECKSUM: 07605dbacfbeaa25ccc170d8d8250a5b37e297c2
 
 COCOAPODS: 1.7.0

@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A6245FEB22B27F3B00C38AC2 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6245FEA22B27F3B00C38AC2 /* opencv2.framework */; };
 		A66AA27E22A91284002B5718 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A66AA27D22A91284002B5718 /* AppDelegate.m */; };
 		A66AA28122A91284002B5718 /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = A66AA28022A91284002B5718 /* ViewController.mm */; };
 		A66AA28422A91284002B5718 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A66AA28222A91284002B5718 /* Main.storyboard */; };
@@ -37,7 +36,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		A6245FEA22B27F3B00C38AC2 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = opencv2.framework; sourceTree = "<group>"; };
 		A66AA27922A91284002B5718 /* JFOpenCV2Study.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JFOpenCV2Study.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A66AA27C22A91284002B5718 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A66AA27D22A91284002B5718 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -63,7 +61,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A6245FEB22B27F3B00C38AC2 /* opencv2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,7 +84,6 @@
 		A6245FE922B27F3B00C38AC2 /* openCV */ = {
 			isa = PBXGroup;
 			children = (
-				A6245FEA22B27F3B00C38AC2 /* opencv2.framework */,
 			);
 			path = openCV;
 			sourceTree = "<group>";

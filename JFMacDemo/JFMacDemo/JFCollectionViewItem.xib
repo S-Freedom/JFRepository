@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14490.70"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="JFCollectionViewItem" customModule="JFMacDemo" customModuleProvider="target">
+            <connections>
+                <outlet property="goJumpbtn" destination="3O0-17-vd6" id="eke-sq-2an"/>
+                <outlet property="text" destination="GuG-eb-oW0" id="ns3-ER-BMr"/>
+                <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView misplaced="YES" id="Hz6-mo-xeY">
+            <rect key="frame" x="0.0" y="0.0" width="200" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="GuG-eb-oW0">
+                    <rect key="frame" x="13" y="16" width="44" height="17"/>
+                    <textFieldCell key="cell" lineBreakMode="clipping" title="左标题" id="63O-VJ-TeP">
+                        <font key="font" usesAppearanceFont="YES"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="3O0-17-vd6">
+                    <rect key="frame" x="110" y="7" width="81" height="32"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="Lao-ds-BeR"/>
+                        <constraint firstAttribute="width" constant="69" id="wOZ-pT-ftD"/>
+                    </constraints>
+                    <buttonCell key="cell" type="push" title="跳转" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="fhY-hr-BVH">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" usesAppearanceFont="YES"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="btnClick:" target="-2" id="gaD-Hd-hDd"/>
+                    </connections>
+                </button>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="3O0-17-vd6" secondAttribute="trailing" constant="15" id="GCr-hi-uo2"/>
+                <constraint firstItem="GuG-eb-oW0" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="15" id="GYo-4M-gUY"/>
+                <constraint firstItem="3O0-17-vd6" firstAttribute="centerY" secondItem="Hz6-mo-xeY" secondAttribute="centerY" id="Pjd-1I-rbJ"/>
+                <constraint firstItem="GuG-eb-oW0" firstAttribute="centerY" secondItem="Hz6-mo-xeY" secondAttribute="centerY" id="bnP-J8-Ys9"/>
+                <constraint firstItem="GuG-eb-oW0" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" constant="16" id="mhl-Dh-CKl"/>
+            </constraints>
+            <point key="canvasLocation" x="140" y="153"/>
+        </customView>
+        <customObject id="m3n-b8-w9K" customClass="JFCollectionViewItem" customModule="JFMacDemo" customModuleProvider="target"/>
+    </objects>
+</document>

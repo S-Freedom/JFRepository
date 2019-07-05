@@ -7,4 +7,5 @@ target 'JFCommonDemo' do
 #    pod 'JFCommonTool', :podspec => '~/.cocoapods/repos/JFCommonTool/JFCommonTool'  #指定podspec文件
 
   pod 'CTMediator'
+  pod 'SDWebImage'
 end
