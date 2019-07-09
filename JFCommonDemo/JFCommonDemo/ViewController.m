@@ -27,32 +27,58 @@
 
 @implementation ViewController
 
+- (NSString*)disable_EmojiString:(NSString *)text
+{
+    //去除表情规则
+    //  \u0020-\\u007E  标点符号，大小写字母，数字
+    //  \u00A0-\\u00BE  特殊标点  (¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾)
+    //  \u2E80-\\uA4CF  繁简中文,日文，韩文 彝族文字
+    //  \uF900-\\uFAFF  部分汉字
+    //  \uFE30-\\uFE4F  特殊标点(︴︵︶︷︸︹)
+    //  \uFF00-\\uFFEF  日文  (ｵｶｷｸｹｺｻ)
+    //  \u2000-\\u201f  特殊字符(‐‑‒–—―‖‗‘’‚‛“”„‟)
+    // 注：对照表 http://blog.csdn.net/hherima/article/details/9045765
+    
+    NSRegularExpression* expression = [NSRegularExpression regularExpressionWithPattern:@"[^\\u0020-\\u007E\\u00A0-\\u00BE\\u2E80-\\uA4CF\\uF900-\\uFAFF\\uFE30-\\uFE4F\\uFF00-\\uFFEF\\u2000-\\u201f\r\n]" options:NSRegularExpressionCaseInsensitive error:nil];
+    
+    
+    NSString* result = [expression stringByReplacingMatchesInString:text options:0 range:NSMakeRange(0, text.length) withTemplate:@""];
+    
+    return result;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     NSLog(@"%s", __func__);
     self.view.backgroundColor = [UIColor whiteColor];
     
     
-    self.goABtn = [[UIButton alloc] initWithFrame:CGRectMake(0, 100, 100, 50)];
-    [self.goABtn setTitle:@"goAModel" forState:UIControlStateNormal];
-    [self.goABtn addTarget:self action:@selector(btnClick:) forControlEvents:UIControlEventTouchUpInside];
-    [self.goABtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-    self.goABtn.tag = 1;
-    [self.view addSubview:self.goABtn];
+    NSString *str = [self disable_EmojiString:@"sdfsdf😯😯谦与谦逊🎭kldg"];
+    NSLog(@"str : %@", str);
     
-    self.goBBtn = [[UIButton alloc] initWithFrame:CGRectMake(100, 100, 100, 50)];
-    [self.goBBtn setTitle:@"goBModel" forState:UIControlStateNormal];
-    [self.goBBtn addTarget:self action:@selector(btnClick:) forControlEvents:UIControlEventTouchUpInside];
-    [self.goBBtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-    self.goBBtn.tag = 2;
-    [self.view addSubview:self.goBBtn];
+//    self.goABtn = [[UIButton alloc] initWithFrame:CGRectMake(0, 100, 100, 50)];
+//    [self.goABtn setTitle:@"goAModel" forState:UIControlStateNormal];
+//    [self.goABtn addTarget:self action:@selector(btnClick:) forControlEvents:UIControlEventTouchUpInside];
+//    [self.goABtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+//    self.goABtn.tag = 1;
+//    [self.view addSubview:self.goABtn];
+//
+//    self.goBBtn = [[UIButton alloc] initWithFrame:CGRectMake(100, 100, 100, 50)];
+//    [self.goBBtn setTitle:@"goBModel" forState:UIControlStateNormal];
+//    [self.goBBtn addTarget:self action:@selector(btnClick:) forControlEvents:UIControlEventTouchUpInside];
+//    [self.goBBtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+//    self.goBBtn.tag = 2;
+//    [self.view addSubview:self.goBBtn];
+//
+//    self.goCBtn = [[UIButton alloc] initWithFrame:CGRectMake(200, 100, 100, 50)];
+//    [self.goCBtn setTitle:@"goCModel" forState:UIControlStateNormal];
+//    [self.goCBtn addTarget:self action:@selector(btnClick:) forControlEvents:UIControlEventTouchUpInside];
+//    [self.goCBtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+//    self.goCBtn.tag = 3;
+//    [self.view addSubview:self.goCBtn];
     
-    self.goCBtn = [[UIButton alloc] initWithFrame:CGRectMake(200, 100, 100, 50)];
-    [self.goCBtn setTitle:@"goCModel" forState:UIControlStateNormal];
-    [self.goCBtn addTarget:self action:@selector(btnClick:) forControlEvents:UIControlEventTouchUpInside];
-    [self.goCBtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-    self.goCBtn.tag = 3;
-    [self.view addSubview:self.goCBtn];
+    
+    
 //    NSLog(@"datastr : %@",[JRFileManager getCurrentDataString]);
 //
 //    NSMutableArray *arr = [NSMutableArray new];

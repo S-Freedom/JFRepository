@@ -328,46 +328,169 @@ void createThread(){
     pthread_exit(NULL);
 }
 
-#include <vector>
-#include <string>
-#include <stdio.h>
-#include <stdlib.h>
-
-#include <cgicc/CgiDefs.h>
-#include <cgicc/Cgicc.h>
-#include <cgicc/HTTPHTMLHeader.h>
-#include <cgicc/HTMLClasses.h>
-
-using namespace std;
-using namespace cgicc;
-
-int main ()
+class CMyString
 {
-    Cgicc formData;
+    public:
+    CMyString(char* pData = nullptr);
+    CMyString(const CMyString& str);
+    ~CMyString(void);
     
-    cout << "Content-type:text/html\r\n\r\n";
-    cout << "<html>\n";
-    cout << "<head>\n";
-    cout << "<title>使用 GET 和 POST 方法</title>\n";
-    cout << "</head>\n";
-    cout << "<body>\n";
+    CMyString& operator = (const CMyString& str);
     
-    form_iterator fi = formData.getElement("first_name");
-    if( !fi->isEmpty() && fi != (*formData).end()) {
-        cout << "名：" << **fi << endl;
-    }else{
-        cout << "No text entered for first name" << endl;
+    void Print();
+    
+    private:
+    char* m_pData;
+};
+
+CMyString::CMyString(char *pData)
+{
+    if(pData == nullptr)
+    {
+        m_pData = new char[1];
+        m_pData[0] = '\0';
     }
-    cout << "<br/>\n";
-    fi = formData.getElement("last_name");
-    if( !fi->isEmpty() &&fi != (*formData).end()) {
-        cout << "姓：" << **fi << endl;
-    }else{
-        cout << "No text entered for last name" << endl;
+    else
+    {
+        int length = strlen(pData);
+        m_pData = new char[length + 1];
+        strcpy(m_pData, pData);
     }
-    cout << "<br/>\n";
+}
+
+CMyString::CMyString(const CMyString &str)
+{
+    int length = strlen(str.m_pData);
+    m_pData = new char[length + 1];
+    strcpy(m_pData, str.m_pData);
+}
+
+CMyString::~CMyString()
+{
+    delete[] m_pData;
+}
+
+CMyString& CMyString::operator = (const CMyString& str)
+{
+    if(this == &str)
+    return *this;
     
-    cout << "</body>\n";
-    cout << "</html>\n";
+    delete []m_pData;
+    m_pData = nullptr;
     
+    m_pData = new char[strlen(str.m_pData) + 1];
+    strcpy(m_pData, str.m_pData);
+    
+    return *this;
+}
+
+// ====================≤‚ ‘¥˙¬Î====================
+void CMyString::Print()
+{
+    printf("%s", m_pData);
+}
+
+void Test1()
+{
+    printf("Test1 begins:\n");
+    
+    char* text = "Hello world";
+    
+    CMyString str1(text);
+    CMyString str2;
+    str2 = str1;
+    
+    printf("The expected result is: %s.\n", text);
+    
+    printf("The actual result is: ");
+    str2.Print();
+    printf(".\n");
+}
+
+// ∏≥÷µ∏¯◊‘º∫
+void Test2()
+{
+    printf("Test2 begins:\n");
+    
+    char* text = "Hello world";
+    
+    CMyString str1(text);
+    str1 = str1;
+    
+    printf("The expected result is: %s.\n", text);
+    
+    printf("The actual result is: ");
+    str1.Print();
+    printf(".\n");
+}
+
+// ¡¨–¯∏≥÷µ
+void Test3()
+{
+    printf("Test3 begins:\n");
+    
+    char* text = "Hello world";
+    
+    CMyString str1(text);
+    CMyString str2, str3;
+    str3 = str2 = str1;
+    
+    printf("The expected result is: %s.\n", text);
+    
+    printf("The actual result is: ");
+    str2.Print();
+    printf(".\n");
+    
+    printf("The expected result is: %s.\n", text);
+    
+    printf("The actual result is: ");
+    str3.Print();
+    printf(".\n");
+}
+
+bool dulplicate(int numbers[], int length, int *duplication){
+
+    if(numbers == nullptr || length <= 0)
+    {
+        return false;
+    }
+
+    for (int i =0; i<length; ++i)
+    {
+        if(numbers[i] < 0 || numbers[i] > length -1){
+            return false;
+        }
+    }
+
+    for (int i =0; i<length; ++i) {
+        cout << "i:" << i << "numbers[i]:" << numbers[i] << endl;
+        while (i != numbers[i]) {
+
+            if(numbers[i] == numbers[numbers[i]]){
+
+                *duplication = numbers[i];
+                return true;
+            }
+
+            int temp = numbers[i];
+            numbers[i] = numbers[temp];
+            numbers[temp] = temp;
+            cout << "交换" << numbers[i] << " 和" << numbers[numbers[i]] << endl;
+        }
+    }
+    return false;
+}
+
+int main(int argc, char* argv[])
+{
+//    Test1();
+//    Test2();
+//    Test3();
+    
+    int numbers[] = {2,4,3,2,1,3};
+    int results;
+    int length = sizeof(numbers)/sizeof(int);
+    dulplicate(numbers, length, &results);
+    cout << "result" << results << endl;
     return 0;
+}
